@@ -1,0 +1,90 @@
+.boxes {
+	text-align: center;
+}
+
+.boxes figure .social-medias {
+	background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 15px 0 0 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.boxes figcaption {
+	position: relative;
+}
+.boxes ul li {
+	list-style: none;
+	display: inline-block;
+	line-height: 0;
+	margin-left: 10px;
+}
+.text h2 {
+	margin-top: 5px;
+}
+.text h2 a {
+	color: #333333;
+	text-decoration: none;
+}
+.text ul {
+	margin: 0;
+}
+.tel-details {
+	float: left;
+}
+/* .d-inline-block {
+ 	display: inline-block; //Esto es prov, hasta que se haga un repeat y espero que Ang le automaticax el float: left c= en home
+}*/
+.btn--navy-blue {
+	padding: 5px 10px;
+	background-color: #0f132e;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	vertical-align: sub;
+}
+.width-500 {
+	width: 500px;
+}
+.social-medias ul {
+	padding-left: 0;
+}
+.fa {
+	color: white;
+}
+.social-medias ul li a {
+	border-radius: 100%;
+    border: 1px solid #fff;
+    color: #fff;
+    float: left;
+    font-size: 15px;
+    height: 28px;
+    padding: 6px 3px;
+    text-align: center;
+    width: 28px;
+    color: #fff;
+    border-color: #fff;
+}
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel--orange {
+    background-color: #f05f40;
+    color: #fff;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.fH2 {
+    font-size: 30px;
+}

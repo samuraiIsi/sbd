@@ -1,0 +1,29 @@
+<div [class]="box.classDiv">
+    <article [class]="box.articleClass">
+        <div class="panel-heading text-center fH2" ng-if="header.length">Makito</div>
+        <figure>
+            <a href="#">
+                <img [src]="box.image" width="294px">
+            </a>
+            <figcaption *ngIf="box.mediaClass">
+                <div class="social-medias">
+                    <ul>
+                        <li *ngFor="let media of box.mediaClass"><a data-original-title="Facebook" href=""><i [class]="media"></i></a></li>
+                    </ul>
+                </div>
+            </figcaption>
+        </figure>
+        <div class="text" *ngIf="box.btnClass">
+            <header>
+                <span>Owner-Director</span>
+                <h2 class="cs-post-title"><a href="">{{box.name}}</a></h2>
+            </header>
+            <div class="tel-details col-lg-6">
+                <span>Telephone</span>
+                <p>{{box.telephone}}</p>
+            </div>
+            <a href="" [class]="box.btnClass">{{box.btnText}}</a>
+        </div>
+
+    </article>
+</div>
