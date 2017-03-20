@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router }            from '@angular/router';
+
+import { BoxesPanels }             from '../../types/boxesPanels/boxes-panels';
+import { AgenciesService }         from '../../services/agencies/agencies.services';
 
 @Component({
     moduleId: module.id,
     selector: 'agencies-page',
-    template: '<p>Agencies</p>',
-    styleUrls: [ '../../../theme/styles/about.page.css' ]
+    templateUrl: './agencies.page.tpl.html'
 })
 
 export class AgenciesPage {
-
+	agencies: BoxesPanels[];
+    constructor(
+        private agenciesService: AgenciesService) { }
+    getBoxesPanel(): void {
+        this.agenciesService.getBoxesPanel().then(agencies => this.agencies = agencies);
+    }
+    ngOnInit(): void {
+        this.getBoxesPanel();
+    }
 }

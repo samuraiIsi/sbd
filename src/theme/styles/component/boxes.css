@@ -1,6 +1,13 @@
 .boxes {
 	text-align: center;
+    padding: 0 0 25px 0;
+    margin-bottom: 20px;
 }
+/*.boxes figure {
+    float: left;
+    position: relative;
+    width: 100%;
+}*/
 
 .boxes figure .social-medias {
 	background: rgba(0,0,0,0.5);
@@ -21,19 +28,22 @@
 	line-height: 0;
 	margin-left: 10px;
 }
+
 .text h2 {
 	margin-top: 5px;
 }
 .text h2 a {
 	color: #333333;
 	text-decoration: none;
+    font-size: 28px;
+    position: relative;
 }
 .text ul {
 	margin: 0;
 }
-.tel-details {
+/*.tel-details {
 	float: left;
-}
+}*/
 /* .d-inline-block {
  	display: inline-block; //Esto es prov, hasta que se haga un repeat y espero que Ang le automaticax el float: left c= en home
 }*/
@@ -75,8 +85,13 @@
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
-.panel--orange {
-    background-color: #f05f40;
+.panel figure a {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.panel--blue-dark {
+    background-color: rgba(4, 74, 134, 1);
     color: #fff;
 }
 .panel-heading {
@@ -87,4 +102,34 @@
 }
 .fH2 {
     font-size: 30px;
+}
+.panel figure a img {
+    margin: 0 auto;
+    width: 100%;
+}
+.caption {
+    background: rgba(4, 74, 134, .8);
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    height: 100%;
+    opacity: 0;
+}
+.caption i {
+    font-size: 45px;
+}
+.caption, .caption-content {
+    position: absolute;
+    width: 100%;
+}
+.caption-content {
+    height: 20px;
+    font-size: 20px;
+    top: 50%;
+    margin-top: -20px;
+    color: #fff;
+    text-align: center;
+}
+.caption:hover {
+    opacity: 1;
 }

@@ -14,10 +14,12 @@ export class InMemoryDataService implements InMemoryDbService {
             {id: 20, name: 'Tornado'}
         ];
         let boxes = [{
-                articleClass: 'boxes',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg', 
+                classDiv: 'col-lg-6 col-md-6 col-xs-12',
+                articleClass: 'boxes col-lg-6 col-lg-offset-3 bg-border-img',
+                headerText: '',
+                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                imageClass: '', 
                 name: 'Michael A. Feetham',
-                classDiv: 'col-lg-2 col-md-6 col-xs-12 col-lg-offset-4',
                 telephone: '900 300 307',
                 btnClass: 'btn--navy-blue',
                 btnText: 'More',
@@ -27,10 +29,12 @@ export class InMemoryDataService implements InMemoryDbService {
                 ]
             },
             {
-                articleClass: 'boxes',
+                classDiv: 'col-lg-6 col-md-6 col-xs-12',
+                articleClass: 'boxes col-lg-6 col-lg-offset-3',
+                headerText: '',
                 image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                imageClass: '',
                 name: 'Carlos D. Márquez',
-                classDiv: 'col-lg-2 col-md-12 col-xs-12',
                 telephone: '900 300 307',
                 btnClass: 'btn--navy-blue',
                 btnText: 'More',
@@ -41,18 +45,63 @@ export class InMemoryDataService implements InMemoryDbService {
             }
         ];
         let boxespanel = [{
-                articleClass: 'panel panel--orange',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg', 
-                name: 'Michael Asdfdf. Feethamsfsdf',
-                classDiv: 'col-lg-2 col-md-6 col-xs-12 col-lg-offset-4',
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Spain',
+                image: '../../theme/assets/img/newyork.jpg',
+                imageClass: 'img-responsive', 
+                footerText: 'Juan Carmona Cózar lawyer Degree in Law.'
             },
             {
-                articleClass: 'panel panel--orange',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
-                name: 'Carlos Dsdfsdf. Márquezsdfsdf',
-                classDiv: 'col-lg-2 col-md-12 col-xs-12'
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Peru',
+                image: '../../theme/assets/img/paris.jpg',
+                imageClass: 'img-responsive',
+                footerText: 'Antonio Carmelino & Carlos D. Marquez Moran'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Europe',
+                image: '../../theme/assets/img/sanfran.jpg',
+                imageClass: 'img-responsive',
+                footerText: "Hassans is Gibraltar's largest international law firm."
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12 col-lg-offset-2',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Russia',
+                image: '../../theme/assets/img/img_chania.jpg',
+                imageClass: 'img-responsive',
+                footerText: 'Yakovlev & Partners.'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12 col-md-offset-3 col-lg-offset-0',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Angola',
+                image: '../../theme/assets/img/newyork.jpg',
+                imageClass: 'img-responsive',
+                footerText: 'Paulo Costa'
             }
         ];
-    return { heroes, boxes, boxespanel };
+        let agencies = [{
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Spain',
+                image: '../../theme/assets/img/newyork.jpg',
+                imageClass: 'img-responsive', 
+                footerText: 'Juan Carmona Cózar lawyer Degree in Law.'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'Peru',
+                image: '../../theme/assets/img/paris.jpg',
+                imageClass: 'img-responsive',
+                footerText: 'Antonio Carmelino & Carlos D. Marquez Moran'
+            }
+        ];
+    return { heroes, boxes, boxespanel, agencies };
   }
 }

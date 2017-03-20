@@ -24,6 +24,7 @@ import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar
 
 import { Boxes }                from '../app/types/boxes/boxes';
 import { BoxesPanels }          from '../app/types/boxesPanels/boxes-panels';
+import { AgenciesService }      from '../app/services/agencies/agencies.services';
 import { BoxesService }         from '../app/services/boxesService/boxes.service';
 import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPanelService.service';
 
@@ -47,7 +48,7 @@ import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPan
     HeroSearchComponent,
     PeruGibraltarPage
   ],
-  providers: [ HeroService, BoxesService, BoxesPanelService ],
+  providers: [ HeroService, AgenciesService, BoxesService, BoxesPanelService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

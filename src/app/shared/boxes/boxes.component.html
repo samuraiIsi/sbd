@@ -1,17 +1,22 @@
 <div [class]="box.classDiv">
     <article [class]="box.articleClass">
-        <div class="panel-heading text-center fH2" ng-if="header.length">Makito</div>
+        <div class="panel-heading text-center fH2" *ngIf="box.headerText">{{box.headerText}}</div>
         <figure>
             <a href="#">
-                <img [src]="box.image" width="294px">
+                <div class="caption">
+                    <div class="caption-content">
+                        <i class="glyphicon glyphicon-zoom-in zoom-in--medium"></i>
+                    </div>
+                </div>
+                <img [src]="box.image" [class]="box.imageClass">
             </a>
-            <figcaption *ngIf="box.mediaClass">
+            <!-- <figcaption *ngIf="box.mediaClass">
                 <div class="social-medias">
                     <ul>
                         <li *ngFor="let media of box.mediaClass"><a data-original-title="Facebook" href=""><i [class]="media"></i></a></li>
                     </ul>
                 </div>
-            </figcaption>
+            </figcaption> -->
         </figure>
         <div class="text" *ngIf="box.btnClass">
             <header>
@@ -24,6 +29,6 @@
             </div>
             <a href="" [class]="box.btnClass">{{box.btnText}}</a>
         </div>
-
+        <div class="panel-footer panel--blue-dark" *ngIf="box.footerText">{{box.footerText}}</div>
     </article>
 </div>
