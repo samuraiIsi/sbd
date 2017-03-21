@@ -1,8 +1,9 @@
 export class BoxesPanels {
-  image: string;
-  name: string;
-  classDiv: string;
-  telephone: string;
-  btnClass: string;
-  btnText: string;
-}
+	classDiv: string;
+	articleClass: string;
+	headerText: string;
+	image: string;
+	imageClass: string;
+	btnLink: string;
+	footerText: string;
+	}

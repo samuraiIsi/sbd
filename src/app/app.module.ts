@@ -18,13 +18,16 @@ import { AssociatesPage }       from '../app/pages/associates/associates.page';
 import { ContactPage }          from '../app/pages/contact/contact.page';
 import { BoxesComponent }       from '../app/shared/boxes/boxes.component';
 import { HeroSearchComponent }  from '../app/shared/heroSearch/hero-search.component';
-import { HeroDetailComponent }  from '../app/shared/heroDetails/hero-detail.component';
-import { HeroService }          from '../app/services/heroService/hero.service';
+import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.component';
+import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
+import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
+import { AboutService }          from '../app/services/aboutService/about.service';
 import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 
 import { Boxes }                from '../app/types/boxes/boxes';
 import { BoxesPanels }          from '../app/types/boxesPanels/boxes-panels';
-import { AgenciesService }      from '../app/services/agencies/agencies.services';
+import { AssociatesService }    from '../app/services/associatesService/associates.services';
+import { AgenciesService }      from '../app/services/agenciesService/agencies.service';
 import { BoxesService }         from '../app/services/boxesService/boxes.service';
 import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPanelService.service';
 
@@ -39,7 +42,9 @@ import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPan
   declarations: [
     AppComponent,
     HomePage,
-    HeroDetailComponent,
+    AboutDetailComponent,
+    AgenciesDetailComponent,
+    AssociatesDetailComponent,
     AboutPage,
     AgenciesPage,
     AssociatesPage,
@@ -48,7 +53,7 @@ import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPan
     HeroSearchComponent,
     PeruGibraltarPage
   ],
-  providers: [ HeroService, AgenciesService, BoxesService, BoxesPanelService ],
+  providers: [ AboutService, AgenciesService, AssociatesService, BoxesService, BoxesPanelService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

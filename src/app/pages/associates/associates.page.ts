@@ -6,8 +6,7 @@ import { BoxesPanelService }    from '../../services/boxesPanelService/boxesPane
 @Component({
     moduleId: module.id,
     selector: 'associates-page',
-    templateUrl: './associates.page.tpl.html',
-    providers: [BoxesPanelService]
+    templateUrl: './associates.page.tpl.html'
 })
 
 export class AssociatesPage {

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router }            from '@angular/router';
 
 import { BoxesPanels }             from '../../types/boxesPanels/boxes-panels';
-import { AgenciesService }         from '../../services/agencies/agencies.services';
+import { AgenciesService }         from '../../services/agenciesService/agencies.service';
 
 @Component({
     moduleId: module.id,
@@ -11,7 +11,7 @@ import { AgenciesService }         from '../../services/agencies/agencies.servic
 })
 
 export class AgenciesPage {
-	agencies: BoxesPanels[];
+    agencies: BoxesPanels[];
     constructor(
         private agenciesService: AgenciesService) { }
     getBoxesPanel(): void {

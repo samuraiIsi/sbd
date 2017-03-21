@@ -2,8 +2,8 @@
     <article [class]="box.articleClass">
         <div class="panel-heading text-center fH2" *ngIf="box.headerText">{{box.headerText}}</div>
         <figure>
-            <a href="#">
-                <div class="caption">
+            <a [routerLink]="[box.headerText]">
+                <div class="caption" *ngIf="!box.btnClass">
                     <div class="caption-content">
                         <i class="glyphicon glyphicon-zoom-in zoom-in--medium"></i>
                     </div>
@@ -27,7 +27,7 @@
                 <span>Telephone</span>
                 <p>{{box.telephone}}</p>
             </div>
-            <a href="" [class]="box.btnClass">{{box.btnText}}</a>
+            <a [routerLink]="['/about', box.btnLink]" [class]="box.btnClass">{{box.btnText}}</a>
         </div>
         <div class="panel-footer panel--blue-dark" *ngIf="box.footerText">{{box.footerText}}</div>
     </article>

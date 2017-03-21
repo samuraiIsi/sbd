@@ -135,3 +135,9 @@ nav a.active {
         background: url(../../theme/assets/img/bg-border.png) repeat-x left bottom;
     }
 }
+.fs20 {
+    font-size: 20px;
+}
+.angular-with-newlines {
+    white-space: pre-wrap;
+}
