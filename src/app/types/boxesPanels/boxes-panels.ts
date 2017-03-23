@@ -6,4 +6,4 @@ export class BoxesPanels {
 	imageClass: string;
 	btnLink: string;
 	footerText: string;
-	}
+}

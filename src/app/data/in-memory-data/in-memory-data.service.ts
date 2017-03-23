@@ -25,7 +25,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 text: "Juan Carmona Cózar lawyer Degree in Law from the Complutense University of Madrid in 1975.Master School of Legal Practice of the Complutense University of Madrid in 1976. Specializes in advising corporations and companies in their complex relationships and contacts with government, with the activity intended to carry out. These activities are most often urban implications of applying for licenses, environmental, management of cases of expropriation, including disciplinary, involving a large economic impact and, sometimes, delay or stoppage if not faced with knowledge, experience, and discretion.  Juan Carmona Cózar, has been senior executive in local, provincial, and regional government for 12 years, which has allowed him to deeply know the Public Administration from within.\n- Mayor of La Línea de la Concepción from 1979-1984 \n- Vice President of the Provincial Council of Cadiz 1979-1983\n- Provincial Delegate of Finance of Cadiz in 1984-1986.\n- Director General of Budgets of the Junta de Andalucía (Regional Government) of 1986-1991.\nHe has also worked with all the major utilities and energy sector, implementation of power plant projects, both producing renewable wind energy as gas combined cycles. (Endesa, Iberdrola, Union Fenosa, Cepsa, Elecnor, Gamesa, etc. ... ..)\nHe has also participated and contributed as an expert on public projects that require specialized advice to the administration, in its relationship with businesses and citizens.  In that sense he is a specialist in Law of Public Administration and Urban Development, which has allowed municipalities and corporations have their counselling efforts leading to successfully negotiating complex projects such as: Management Plans, records of expropriation, relocation of populations , ...... etc."
             },
             {
-                id: 'peru', 
+                id: 'sports-agency', 
                 title: 'Lawyer Carlos D. Márquez',
                 subTitle: 'Owner- Director',
                 image: '../../theme/assets/img/LRA-448-263x452.jpg',
@@ -115,6 +115,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'spain',
                 image: '../../theme/assets/img/newyork.jpg',
                 imageClass: 'img-responsive',
+                btnLink: 'spain',
                 footerText: 'COMPANY ADVISER'
             },
             {
@@ -123,7 +124,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'peru',
                 image: '../../theme/assets/img/paris.jpg',
                 imageClass: 'img-responsive',
-                btnLink: '',
+                btnLink: 'peru',
                 footerText: 'COMPANY CONSULTANTS'
             },
             {
@@ -132,7 +133,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'europe',
                 image: '../../theme/assets/img/sanfran.jpg',
                 imageClass: 'img-responsive',
-                btnLink: '',
+                btnLink: 'europe',
                 footerText: "COMPANY SOLICITORS"
             },
             {
@@ -141,7 +142,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'russia',
                 image: '../../theme/assets/img/img_chania.jpg',
                 imageClass: 'img-responsive',
-                btnLink: '',
+                btnLink: 'russia',
                 footerText: 'ASSOCIATES Yakovlev & Partners'
             },
             {
@@ -150,7 +151,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'angola',
                 image: '../../theme/assets/img/newyork.jpg',
                 imageClass: 'img-responsive',
-                btnLink: '',
+                btnLink: 'angola',
                 footerText: 'LEGAL REPRESENTATIVE'
             }
         ];
@@ -159,15 +160,17 @@ export class InMemoryDataService implements InMemoryDbService {
                 articleClass: 'panel panel--blue-dark',
                 headerText: 'aads',
                 image: '../../theme/assets/img/newyork.jpg',
-                imageClass: 'img-responsive', 
+                imageClass: 'img-responsive',
+                btnLink: 'aads',
                 footerText: 'Part of an Automotive Group of companies.'
             },
             {
                 classDiv: 'col-lg-4 col-md-6 col-xs-12',
                 articleClass: 'panel panel--blue-dark',
-                headerText: 'SPORTS AGENCY',
+                headerText: 'sports agency',
                 image: '../../theme/assets/img/paris.jpg',
                 imageClass: 'img-responsive',
+                btnLink: 'sports-agency',
                 footerText: 'KENNETH ASQUEZ LLM  Sports Law.'
             }
         ];

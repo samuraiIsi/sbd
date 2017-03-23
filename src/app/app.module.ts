@@ -17,6 +17,7 @@ import { AgenciesPage }         from '../app/pages/agencies/agencies.page';
 import { AssociatesPage }       from '../app/pages/associates/associates.page';
 import { ContactPage }          from '../app/pages/contact/contact.page';
 import { BoxesComponent }       from '../app/shared/boxes/boxes.component';
+import { BasicStructurePageComponent } from '../app/shared/basic-structure-page/basic-structure-page.component';
 import { HeroSearchComponent }  from '../app/shared/heroSearch/hero-search.component';
 import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.component';
 import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
@@ -26,6 +27,7 @@ import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar
 
 import { Boxes }                from '../app/types/boxes/boxes';
 import { BoxesPanels }          from '../app/types/boxesPanels/boxes-panels';
+import { BasicStructurePage }   from '../app/types/basicStructurePage/basic-structure-page';
 import { AssociatesService }    from '../app/services/associatesService/associates.services';
 import { AgenciesService }      from '../app/services/agenciesService/agencies.service';
 import { BoxesService }         from '../app/services/boxesService/boxes.service';
@@ -49,6 +51,7 @@ import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPan
     AgenciesPage,
     AssociatesPage,
     BoxesComponent,
+    BasicStructurePageComponent,
     ContactPage,
     HeroSearchComponent,
     PeruGibraltarPage
