@@ -174,6 +174,38 @@ export class InMemoryDataService implements InMemoryDbService {
                 footerText: 'KENNETH ASQUEZ LLM  Sports Law.'
             }
         ];
-    return { heroes, boxes, boxespanel, agenciesBoxes, associates, agencies };
+        let perugib = [
+            {
+                title: 'Peru',
+                subTitle: 'WHY INVEST IN PERU?',
+                text: 'cscdcdcdcdc',
+                listTexts: [
+                    'Internationally acknowledged macroeconomic soundness',
+                    'Free trade and free market policies , economic model whose fundamental principle respect to economic freedoms',
+                    'Legal stability - contract law.',
+                    'Attractive sectors for investment.'
+                ]
+            },
+            {
+                title: 'Gibraltar',
+                subTitle: 'WHY INVEST IN GIBRALTAR?',
+                text: 'Gibraltar is a British',
+                listTexts: [
+                    'Internationally acknowledged macroeconomic soundness',
+                    'Free trade and free market policies , economic model whose fundamental principle respect to economic freedoms',
+                    'Legal stability - contract law.',
+                    'Attractive sectors for investment.'
+                ]
+            }
+            ];
+    return { 
+            heroes, 
+            boxes, 
+            boxespanel, 
+            agenciesBoxes, 
+            associates, 
+            agencies,
+            perugib
+    };
   }
 }
