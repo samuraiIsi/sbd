@@ -11,4 +11,8 @@ import { Accordion }          from '../../types/accordion/accordion';
 
 export class AccordionComponent {
     @Input() acc: Accordion;
+    showAcc = true;
+    showAccordion(showAcc: any) {
+    	showAcc == false ? this.showAcc = true : this.showAcc = false;
+    }
 }

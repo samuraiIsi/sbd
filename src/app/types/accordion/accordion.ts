@@ -4,5 +4,6 @@ export class Accordion {
 	text: string;
 	listTexts: string[];
 	info: Object;
-	image?: string; 
+	image?: string;
+	showAcc: Boolean;
 }

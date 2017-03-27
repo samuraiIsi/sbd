@@ -11,6 +11,7 @@ import { InMemoryDataService }  from './data/in-memory-data/in-memory-data.servi
 import { DataBoxesService }     from './data/data-boxes/data-boxes.service';
 
 import { AppComponent }         from './app.component';
+import { AppComponentFooter }   from '../app/layout/footer/footer.page'
 import { HomePage }             from '../app/pages/home/home.page';
 import { AboutPage }            from '../app/pages/about/about.page';
 import { AgenciesPage }         from '../app/pages/agencies/agencies.page';
@@ -45,6 +46,7 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
     ],
     declarations: [
         AppComponent,
+        AppComponentFooter,
         HomePage,
         AboutDetailComponent,
         AgenciesDetailComponent,
@@ -67,6 +69,6 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
         BoxesPanelService,
         PeruGibService 
     ],
-    bootstrap: [ AppComponent ]
+    bootstrap: [ AppComponent, AppComponentFooter ]
 })
 export class AppModule { }

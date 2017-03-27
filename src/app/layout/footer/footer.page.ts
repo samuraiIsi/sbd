@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'footer-app',
-  template: `<h1>Hello {{name}}</h1>`
+  templateUrl: 'app/layout/footer/footer.page.html'
 })
-export class AppComponentFooter  { name = 'Footer'; }
+export class AppComponentFooter  { }
