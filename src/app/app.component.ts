@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
   selector: 'header-app',
   template: `
     <header class='header-nav'>
-        <div>
-            <img src='../../theme/assets/img/logo-header.png'>
-            <span>Gibraltar</span>
-            <span>Strategic Business Development</span>
+        <div class='pull-left logo-area'>
+            <img src='../../theme/assets/img/logo-header.png' class='pull-left'>
+            <ul class='pull-left'>
+                <li class='fs23'>Gibraltar</li>
+                <li>Strategic Business Development</li>
+            </ul>
         </div>
         <nav class="menu">
             <a routerLink="/home" routerLinkActive="active">Home</a>
