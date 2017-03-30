@@ -1,9 +1,27 @@
-<!-- <h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroes" [routerLink]="['/detail', hero.id]" class="col-lg-3 col-xs-12">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
+<div class="containerSlider">Hola
+    <div class="contentSlider">
+        <div class="slider-img img-responsive">
+            <div class="slider-imgWrapper">
+                <a class="prev triangle left"></a>
+                <a class="next triangle right"></a>
+                <div class="paginationWrapper"><span class="dot dot--active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                <ul>
+                    <li class="slide fadeCarouserl" [class]="{'width': progressPercentage + 'px'}"><img src="../../theme/assets/img/peru-gib.webp" alt="Football"> class="img-responsive">
+                        <div class="carousel-caption">
+                            <h1>Foto 1</h1>
+                            <p>All about football including a glossary of terms, players, rules</p>
+                            <button class="btn btn--green pull-right">Bet Now</button>
+                        </div>
+                    </li>
+                    <li class="slide fadeCarouserl" style="display: none;"><img src="../../theme/assets/img/peru-gib.webp" alt="Basketball" width="" height="" class="img-responsive">
+                        <div class="carousel-caption">
+                            <h1>Foto 2</h1>
+                            <p>Compare basketball betting odds and place your bets with bookmaker that benefits you the most.</p>
+                            <button class="btn btn--green pull-right">Bet Now</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </a>
 </div>
-<hero-search></hero-search> -->

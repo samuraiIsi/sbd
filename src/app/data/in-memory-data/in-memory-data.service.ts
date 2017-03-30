@@ -26,11 +26,11 @@ export class InMemoryDataService implements InMemoryDbService {
             },
             {
                 id: 'sports-agency', 
-                title: 'Lawyer Carlos D. Márquez',
-                subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                title: 'Sports Agency',
+                subTitle: 'KENNETH ASQUEZ LLM  Sports Law',
+                image: '../../theme/assets/img/sports-agency.jpg',
                 btnLinkA: 'peru',
-                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+                text: "Smile is a leading Sports & Media Management Company. We have a dedicated team of professionals with a thorough understanding of the Spanish Culture and Language whilst working and educated within the Anglo Saxon model. Our combined experience, our ability to balance the Anglo Saxon and Latin Business Models and Languages and our long-term close contacts within the Iberian Peninsular give the company a real edge and a unique approach.\n The Company was founded in 2003 by Kenneth Asquez. Kenneth has a strong background in the financial services industry having spent eighteen years working in senior positions with two major industry players. During this time he provided financial services to a number of professional players and Senior Executives within the Sports industry.\nIt became clear to Kenneth that these “Special Careers” would benefit from an agency with a solid understanding of financial management. Kenneth is an FA Licensed Player’s Agent since 2003 and holds a Masters in International Sports Law from Anglia Ruskin University. Using Gibraltar as a platform to operate provides Smile with a location that is cost effective, well regulated and accessible, with the unique advantages that come with being a member of the European Union."
             }
         ]
         let associates = [
@@ -38,7 +38,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'spain', 
                 title: 'JUAN CARMELINO',
                 subTitle: 'lawyer',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/newyork.jpg',
                 btnLinkA: 'spain',
                 text: "Juan Carmona Cózar lawyer Degree in Law from the Complutense University of Madrid in 1975.Master School of Legal Practice of the Complutense University of Madrid in 1976. Specializes in advising corporations and companies in their complex relationships and contacts with government, with the activity intended to carry out. These activities are most often urban implications of applying for licenses, environmental, management of cases of expropriation, including disciplinary, involving a large economic impact and, sometimes, delay or stoppage if not faced with knowledge, experience, and discretion.  Juan Carmona Cózar, has been senior executive in local, provincial, and regional government for 12 years, which has allowed him to deeply know the Public Administration from within.\n- Mayor of La Línea de la Concepción from 1979-1984 \n- Vice President of the Provincial Council of Cadiz 1979-1983\n- Provincial Delegate of Finance of Cadiz in 1984-1986.\n- Director General of Budgets of the Junta de Andalucía (Regional Government) of 1986-1991.\nHe has also worked with all the major utilities and energy sector, implementation of power plant projects, both producing renewable wind energy as gas combined cycles. (Endesa, Iberdrola, Union Fenosa, Cepsa, Elecnor, Gamesa, etc. ... ..)\nHe has also participated and contributed as an expert on public projects that require specialized advice to the administration, in its relationship with businesses and citizens.  In that sense he is a specialist in Law of Public Administration and Urban Development, which has allowed municipalities and corporations have their counselling efforts leading to successfully negotiating complex projects such as: Management Plans, records of expropriation, relocation of populations , ...... etc."
             },
@@ -46,7 +46,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'peru', 
                 title: 'Lawyer Carlos D. Márquez',
                 subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/paris.jpg',
                 btnLinkA: 'peru',
                 text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
             },

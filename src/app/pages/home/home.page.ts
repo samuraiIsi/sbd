@@ -11,13 +11,18 @@ import { AssociatesService }         from '../../services/associatesService/asso
 	styleUrls: [ '../../../theme/styles/home.page.css' ]
 })
 export class HomePage implements OnInit {
+    progressPercentage: number;
 
-  heroes: Hero[] = [];
+    heroes: Hero[] = [];
 
-  constructor(private heroService: AssociatesService) { }
+    constructor(private heroService: AssociatesService) { }
 
-  ngOnInit(): void {
-    // this.heroService.getBoxesPanel()
-    //   .then(heroes => this.heroes = heroes.slice(1, 5));
-  }
+    showSlides(): void{
+        var i, slides, dots;
+        this.progressPercentage = 1000;
+    }
+
+    ngOnInit(): void {
+        this.showSlides();
+    }
 }
