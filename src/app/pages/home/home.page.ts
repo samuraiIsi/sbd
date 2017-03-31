@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from '../../types/heroes/hero';
-import { AssociatesService }         from '../../services/associatesService/associates.services';
+import { Carousel }             from '../../types/carousel/carousel';
+import { HomeService }          from '../../services/homeService/home.service';
 
 
 @Component({
@@ -11,18 +11,45 @@ import { AssociatesService }         from '../../services/associatesService/asso
 	styleUrls: [ '../../../theme/styles/home.page.css' ]
 })
 export class HomePage implements OnInit {
-    progressPercentage: number;
+    // private progressSlides: boolean;
+    // private slide: string;
+    // private first: Object;
+    // private second: Object;
+    // private slideIndex: number;
+    // private myTimer: any;
 
-    heroes: Hero[] = [];
+    carItem: Carousel[];
 
-    constructor(private heroService: AssociatesService) { }
+    constructor(private homeService: HomeService) { }
 
-    showSlides(): void{
-        var i, slides, dots;
-        this.progressPercentage = 1000;
+    getCarousel(): void {
+        this.homeService.getCarousel().then(carItem => this.carItem = carItem);
+    }
+
+    cambiarFoto(): void {
+        alert('hola');
+    }
+
+    changeColor(color: any) {
+        
+    }
+
+    showSlides(): void{//this.slideIndex = 1;
+        //this.first = true ? this.second = false : this.second = true;
+        // if(this.second == true) {
+        //     this.first = true;
+        //     this.second = false;
+        // } else {
+        //     this.first = false;
+        //     this.second = true;
+        // }        
+        // this.progressSlides = true;
+        setInterval(this.showSlides, 4000);
+        // console.log(this.slideIndex);
     }
 
     ngOnInit(): void {
+        this.getCarousel();
         this.showSlides();
     }
 }

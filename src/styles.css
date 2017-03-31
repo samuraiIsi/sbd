@@ -277,7 +277,7 @@ nav a.active {
   z-index: 2;
 }
 .slide {
-    /*display:none;*/
+    display:none;
 }
 @media only screen and (max-width: 768px) {
   .slider-img.carouselCss ul{ overflow: hidden; }
@@ -298,9 +298,9 @@ nav a.active {
 
 .fadeCarouserl {
   -webkit-animation-name: fadeCarouserl;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 3s;
   animation-name: fadeCarouserl;
-  animation-duration: 0.5s;
+  animation-duration: 3s;
 }
 @-webkit-keyframes fadeCarouserl {
   from {opacity: .4} 
@@ -309,4 +309,12 @@ nav a.active {
 @keyframes fadeCarouserl {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+.first {
+    display: block;
+}
+
+.second {
+    display: block;
 }

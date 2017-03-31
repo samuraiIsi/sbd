@@ -198,6 +198,16 @@ export class InMemoryDataService implements InMemoryDbService {
                 ]
             }
             ];
+        let carouselhome = [
+            {
+                image: './../theme/assets/img/peru-gib.webp',
+                header: 'Foto1'
+            },
+            {
+                image: './../theme/assets/img/peru-gib.webp',
+                header: 'Foto2'
+            }
+        ];
     return { 
             heroes, 
             boxes, 
@@ -205,6 +215,7 @@ export class InMemoryDataService implements InMemoryDbService {
             agenciesBoxes, 
             associates, 
             agencies,
+            carouselhome,
             perugib
     };
   }
