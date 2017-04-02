@@ -18,6 +18,7 @@ import { AgenciesPage }         from '../app/pages/agencies/agencies.page';
 import { AssociatesPage }       from '../app/pages/associates/associates.page';
 import { ContactPage }          from '../app/pages/contact/contact.page';
 import { BoxesComponent }       from '../app/shared/boxes/boxes.component';
+import { AddressComponent }     from '../app/shared/address/address.component'
 import { AccordionComponent }   from '../app/shared/accordion/accordion.component';
 import { BasicStructurePageComponent } from '../app/shared/basic-structure-page/basic-structure-page.component';
 import { CarouselComponent }    from '../app/shared/carousel/carousel.component';
@@ -36,6 +37,8 @@ import { AssociatesService }    from '../app/services/associatesService/associat
 import { AgenciesService }      from '../app/services/agenciesService/agencies.service';
 import { BoxesService }         from '../app/services/boxesService/boxes.service';
 import { BoxesPanelService }    from '../app/services/boxesPanelService/boxesPanelService.service';
+import { ContactService }       from '../app/services/contactService/contact.service';
+import { FooterService }        from '../app/services/footer/footer.service';
 import { HomeService }          from '../app/services/homeService/home.service';
 import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
 
@@ -52,6 +55,7 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
         AppComponentFooter,
         HomePage,
         AboutDetailComponent,
+        AddressComponent,
         AgenciesDetailComponent,
         AssociatesDetailComponent,
         CarouselComponent,
@@ -71,6 +75,8 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
         AssociatesService, 
         BoxesService, 
         BoxesPanelService,
+        ContactService,
+        FooterService,
         HomeService,
         PeruGibService 
     ],

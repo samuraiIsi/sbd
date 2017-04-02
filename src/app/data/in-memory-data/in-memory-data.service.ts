@@ -208,6 +208,50 @@ export class InMemoryDataService implements InMemoryDbService {
                 header: 'Foto2'
             }
         ];
+        let footer = [
+            {
+                divClass: 'col-lg-offset-0 col-lg-3',
+                header: 'Peru',
+                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870'
+            },
+            {
+                divClass: 'col-lg-3 pull-right text-right',
+                header: 'Gibraltar',
+                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870'
+            }
+        ];
+        let contactpage = [
+            {
+                divClass: 'col-lg-6 col-md-6',
+                header: 'Peru',
+                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870',
+                mapDivClass: 'col-lg-12',
+                map: 'map'
+            },
+            {
+                divClass: 'col-lg-6 col-md-6',
+                header: 'Gibraltar',
+                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870',
+                mapDivClass: 'col-lg-12',
+                map: 'map2'
+            }
+        ];
     return { 
             heroes, 
             boxes, 
@@ -216,6 +260,8 @@ export class InMemoryDataService implements InMemoryDbService {
             associates, 
             agencies,
             carouselhome,
+            contactpage,
+            footer,
             perugib
     };
   }
