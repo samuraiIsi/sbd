@@ -10,7 +10,17 @@ import { Component } from '@angular/core';
                 <li>Strategic Business Development</li>
             </ul>
         </div>
-        <nav class="menu">
+        <div class="lang-section pull-right">
+            <a href="#">EN</a>  <a href="#">ES</a>
+        </div>
+        <div class="container-btn-menu pull-right" [ngClass]="btnMenuClass" (click)="convertBtnMenu(this)">
+            <a href="javascript:void(0);" (click)="dropDownTopMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+        <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
             <a routerLink="/home" routerLinkActive="active">Home</a>
             <a routerLink="/about" routerLinkActive="active">About</a>
             <a routerLink="/associates" routerLinkActive="active">Associates</a>
@@ -18,6 +28,7 @@ import { Component } from '@angular/core';
             <a routerLink="/perugibraltar" routerLinkActive="active">Peru & Gibraltar</a>
             <a routerLink="/contact" routerLinkActive="active">Contact</a>
         </nav>
+        
     </header>
     <div class="container">
         <router-outlet></router-outlet>
@@ -25,5 +36,14 @@ import { Component } from '@angular/core';
   `
 })
 export class AppComponent {
-  //title = 'Tour of Heroes';
+    private btnMenuClass: string;
+    private collapseIn: string;
+
+    convertBtnMenu(datanav: any): void {
+        this.btnMenuClass = (datanav.btnMenuClass === "change") ? "" : "change";
+    }
+
+    dropDownTopMenu(): void {
+        this.collapseIn = (this.collapseIn === "in") ? "in out" : "in";
+    } 
 }

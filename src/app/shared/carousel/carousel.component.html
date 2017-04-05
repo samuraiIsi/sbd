@@ -1,20 +1,10 @@
-<div class="containerSlider">
-    <div class="contentSlider">
-        <div class="slider-img img-responsive">
-            <div class="slider-imgWrapper">
-                <a class="prev triangle left"></a>
-                <a class="next triangle right"></a>
-                <div class="paginationWrapper"><span class="dot dot--active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-                <ul>
-                    <li *ngFor="let cart of carItem" class="fadeCarouserl" [ngClass]="{'slide': progressSlides, 'first': first}"><img [src]="cart.image" alt="Football">
-                        <div class="carousel-caption">
-                            <h1>{{cart.header}}</h1>
-                            <p>All about football including a glossary of terms, players, rules</p>
-                            <button class="btn btn--green pull-right">Bet Now</button>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+<ul id="ulWrapper " class="slider">
+<li *ngFor="let cart of carItem" [class]="cart.liClass"><img [src]="cart.image" alt="Football" class="img-responsive">
+        <div class="carousel-caption-m">
+            <h1>{{cart.header}}</h1>
+            <p>{{cart.text}}</p>
+            <button class="btn btn--green pull-right" [routerLink]="['/about', cart.btnLink]">More</button>
         </div>
-    </div>
-</div>
+    </li>
+</ul>
+          

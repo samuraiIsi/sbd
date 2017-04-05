@@ -200,17 +200,23 @@ export class InMemoryDataService implements InMemoryDbService {
             ];
         let carouselhome = [
             {
-                image: './../theme/assets/img/peru-gib.webp',
-                header: 'Foto1'
+                image: './../theme/assets/img/gib-xbig.jpg',
+                header: 'Gibraltar',
+                liClass: 'slide1',
+                text: 'Why invest in Gibraltar?',
+                btnLink: 'michael'
             },
             {
-                image: './../theme/assets/img/peru-gib.webp',
-                header: 'Foto2'
+                image: './../theme/assets/img/machu-pichu-xbig.jpg',                
+                header: 'Peru',
+                liClass: 'slide2',
+                text: 'Why invest in Peru?',
+                btnLink: 'carlos'
             }
         ];
         let footer = [
             {
-                divClass: 'col-lg-offset-0 col-lg-3',
+                divClass: 'col-lg-offset-0 col-lg-9 col-md-9 col-sm-8 col-xs-7',
                 header: 'Peru',
                 subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
                 email: 'cmarquez@gibraltar-sbd.com',
@@ -219,7 +225,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 fax: '+51-1-422-1870'
             },
             {
-                divClass: 'col-lg-3 pull-right text-right',
+                divClass: 'col-lg-3 col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-r-scmin-640 text-right',
                 header: 'Gibraltar',
                 subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
                 email: 'cmarquez@gibraltar-sbd.com',
@@ -230,7 +236,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ];
         let contactpage = [
             {
-                divClass: 'col-lg-6 col-md-6',
+                divClass: 'col-lg-6 col-md-6 height-350',
                 header: 'Peru',
                 subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
                 email: 'cmarquez@gibraltar-sbd.com',

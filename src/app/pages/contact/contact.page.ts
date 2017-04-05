@@ -19,6 +19,7 @@ export class ContactPage implements OnInit {
         private addressService: ContactService) { }
     getAddress(): void {
         this.addressService.getAddress().then(addes => this.addes = addes);
+        this.getMap();
     }
     getMap(): void {
     	var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -35,6 +36,6 @@ export class ContactPage implements OnInit {
     }
 	ngOnInit() {
 		this.getAddress();
-		this.getMap();
+		
     }
 }
