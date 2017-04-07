@@ -3,10 +3,11 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
 import { AboutService } from '../../services/aboutService/about.service';
+
 import { Router } from '@angular/router'
 import 'rxjs/add/operator/switchMap';
 
-import { Hero } from '../../types/heroes/hero';
+import { Details } from '../../types/details/details';
 
 @Component({
   moduleId: module.id,
@@ -15,16 +16,18 @@ import { Hero } from '../../types/heroes/hero';
 })
 
 export class AboutDetailComponent implements OnInit {
-    @Input() hero: Hero;
+    @Input() details: Details;
+    
     constructor(
-        private heroService: AboutService,
+        private detailService: AboutService,
         private route: ActivatedRoute,
         private location: Location
     ) {}
+
     ngOnInit(): void {
         this.route.params
-        .switchMap((params: Params) => this.heroService.getHero(params['id']))
-        .subscribe(hero => this.hero = hero);
+        .switchMap((params: Params) => this.detailService.getDetails(params['id']))
+        .subscribe(details => this.details = details);
     }
     goBack(): void {
         this.location.back();

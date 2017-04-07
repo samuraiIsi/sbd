@@ -26,13 +26,13 @@ import { HeroSearchComponent }  from '../app/shared/heroSearch/hero-search.compo
 import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.component';
 import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
 import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
-import { AboutService }          from '../app/services/aboutService/about.service';
 import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 
 import { Boxes }                from '../app/types/boxes/boxes';
 import { BoxesPanels }          from '../app/types/boxesPanels/boxes-panels';
 import { BasicStructurePage }   from '../app/types/basicStructurePage/basic-structure-page';
 import { Carousel }             from '../app/types/carousel/carousel';
+import { AboutService }         from '../app/services/aboutService/about.service';
 import { AssociatesService }    from '../app/services/associatesService/associates.services';
 import { AgenciesService }      from '../app/services/agenciesService/agencies.service';
 import { BoxesService }         from '../app/services/boxesService/boxes.service';
@@ -41,6 +41,9 @@ import { ContactService }       from '../app/services/contactService/contact.ser
 import { FooterService }        from '../app/services/footer/footer.service';
 import { HomeService }          from '../app/services/homeService/home.service';
 import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
+import { TranslateService }     from '../app/services/translationService/translate.service';
+
+
 
 @NgModule({
     imports: [
@@ -70,7 +73,7 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
         PeruGibraltarPage
     ],
     providers: [ 
-        AboutService, 
+        AboutService,
         AgenciesService, 
         AssociatesService, 
         BoxesService, 
@@ -78,7 +81,8 @@ import { PeruGibService }       from '../app/services/peruGib/peru-gib.service';
         ContactService,
         FooterService,
         HomeService,
-        PeruGibService 
+        PeruGibService,
+        TranslateService
     ],
     bootstrap: [ AppComponent, AppComponentFooter ]
 })

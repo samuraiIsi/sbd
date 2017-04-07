@@ -1,7 +1,8 @@
-export class Hero {
+export class Details {
   id: string;
   title: string;
   subTitle: string;
   text: string;
-  image: string; 
+  image: string;
+  lang: string; 
 }

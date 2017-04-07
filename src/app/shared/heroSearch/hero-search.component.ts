@@ -9,7 +9,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import { HeroSearchService }  from '../../../app/services/heroSearchService/hero-search.service';
-import { Hero }               from '../../../app/types/heroes/hero';
+import { Details }               from '../../../app/types/details/details';
 @Component({
   moduleId: module.id,
   selector: 'hero-search',
@@ -18,7 +18,7 @@ import { Hero }               from '../../../app/types/heroes/hero';
   providers: [HeroSearchService]
 })
 export class HeroSearchComponent implements OnInit {
-    heroes: Observable<Hero[]>;
+    heroes: Observable<Details[]>;
     private searchTerms = new Subject<string>();
     constructor(
         private heroSearchService: HeroSearchService,
@@ -35,14 +35,14 @@ export class HeroSearchComponent implements OnInit {
         // return the http search observable
         ? this.heroSearchService.search(term)
         // or the observable of empty heroes if there was no search term
-        : Observable.of<Hero[]>([]))
+        : Observable.of<Details[]>([]))
         .catch(error => {
         // TODO: add real error handling
         console.log(error);
-        return Observable.of<Hero[]>([]);
+        return Observable.of<Details[]>([]);
         });
   }
-    gotoDetail(hero: Hero): void {
+    gotoDetail(hero: Details): void {
         let link = ['/detail', hero.id];
         this.router.navigate(link);
     }

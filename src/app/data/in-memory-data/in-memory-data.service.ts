@@ -1,12 +1,16 @@
 import { InMemoryDbService } from 'angular-in-memory-web-api';
+import { AboutService} from '../../services/aboutService/about.service'
+
 export class InMemoryDataService implements InMemoryDbService {
     createDb() {
-        let heroes = [{
+        let navMenuEN = ["home", "about", "associates", "agencies", "perugibraltar", "contact"];
+        let navMenuES = ["inicio", "nosotros", "asociados", "agencias", "perugibraltar", "contacto"];
+        let detailsEN = [{
                 id: 'michael', 
                 title: 'Honourable Michael A. Feetham',
                 subTitle: 'Owner- Director',
                 image: '../../theme/assets/img/LRA-295-263x452.jpg',
-                text: "Michael Feetham was a former Minister for Trade and Industry in Gibraltar 1988-1996 responsible for economic development. He chaired the committee that drew up the original legislation for the introduction of Financial Services Legislation and the Financial Services Commission both prerequisite to the modernisation and regulation of the present Gibraltar Finance Centre.\nDuring his time in Government he had responsibility for overseeing the largest infrastructural and land reclamation programme in the history of Gibraltar's self government.Since then he has worked in the private sector as an independent consultant. He has also occupied various directorships with leading international firms.\nMichael Feetham first became attracted by Peru its history, culture and people nearly 5 years ago. Following a number of visits he finally decided to form a company in the capital Lima to help attract investors to the country. "
+                text: "Michael Feetham This is English"
             },
             {
                 id: 'carlos', 
@@ -14,6 +18,23 @@ export class InMemoryDataService implements InMemoryDbService {
                 subTitle: 'Owner- Director',
                 image: '../../theme/assets/img/LRA-448-263x452.jpg',
                 text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+            }
+        ];
+        let detailsES = [{
+                id: 'michael', 
+                title: 'Honorable Michael A. Feetham',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                text: "Michael Feetham Esto esta en español. ",
+                lang: 'es'
+            },
+            {
+                id: 'carlos', 
+                title: 'Lawyer Carlos D. Márquez',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC.",
+                lang: 'en'
             }
         ];
         let agencies = [{
@@ -214,6 +235,22 @@ export class InMemoryDataService implements InMemoryDbService {
                 btnLink: 'carlos'
             }
         ];
+        let carouselhomeES = [
+            {
+                image: './../theme/assets/img/gib-xbig.jpg',
+                header: 'Gibraltar',
+                liClass: 'slide1',
+                text: 'Por que invertir en Gibraltar?',
+                btnLink: 'michael'
+            },
+            {
+                image: './../theme/assets/img/machu-pichu-xbig.jpg',                
+                header: 'Peru',
+                liClass: 'slide2',
+                text: 'Por que invertir en Peru?',
+                btnLink: 'carlos'
+            }
+        ];
         let footer = [
             {
                 divClass: 'col-lg-offset-0 col-lg-9 col-md-9 col-sm-8 col-xs-7',
@@ -258,16 +295,21 @@ export class InMemoryDataService implements InMemoryDbService {
                 map: 'map2'
             }
         ];
+        
     return { 
-            heroes, 
+            detailsEN,
+            detailsES, 
             boxes, 
             boxespanel, 
             agenciesBoxes, 
             associates, 
             agencies,
             carouselhome,
+            carouselhomeES,
             contactpage,
             footer,
+            navMenuEN,
+            navMenuES,
             perugib
     };
   }

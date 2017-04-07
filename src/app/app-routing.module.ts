@@ -13,7 +13,9 @@ import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomePage },
+  { path: 'home/es',  component: HomePage },
   { path: 'about/:id', component: AboutDetailComponent },
+  { path: 'about/es/:id', component: AboutDetailComponent },
   { path: 'about', component: AboutPage },
   { path: 'agencies/:id', component: AgenciesDetailComponent },
   { path: 'agencies', component: AgenciesPage },

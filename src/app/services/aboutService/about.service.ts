@@ -3,50 +3,32 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Hero } from '../../types/heroes/hero';
+import { Details } from '../../types/details/details';
 
 @Injectable()
 export class AboutService {
-	private heroesUrl = 'api/heroes';  // URL to web api
-
+	private detailsENUrl = 'api/detailsEN';
+	private detailsESUrl = 'api/detailsES';
 	constructor(private http: Http) { }
 
-	getHeroes(): Promise<Hero[]> {
-		return this.http.get(this.heroesUrl)
+	getHeroes(): Promise<Details[]> {
+		return this.http.get(this.detailsENUrl)
 	       .toPromise()
-	       .then(response => response.json().data as Hero[])
+	       .then(response => response.json().data as Details[])
 	       .catch(this.handleError);
 	}
-	getHero(id: string): Promise<Hero> {
-		const url = `${this.heroesUrl}/${id}`;
+
+	getDetails(id: string): Promise<Details> {
+		var x = window.location.pathname;
+		var y = false;
+		(x.indexOf('es') != -1) ? y = true : y = false;
+		const url = y ? `${this.detailsESUrl}/${id}` : `${this.detailsENUrl}/${id}`;
 		return this.http.get(url)
 			.toPromise()
-			.then(response => response.json().data as Hero)
+			.then(response => response.json().data as Details)
 			.catch(this.handleError);
 	}
-	private headers = new Headers({'Content-Type': 'application/json'});
-	update(hero: Hero): Promise<Hero> {
-		const url = `${this.heroesUrl}/${hero.id}`;
-		return this.http
-			.put(url, JSON.stringify(hero), {headers: this.headers})
-			.toPromise()
-			.then(() => hero)
-			.catch(this.handleError);
-	}
-	create(name: string): Promise<Hero> {
-		return this.http
-			.post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
-			.toPromise()
-			.then(res => res.json().data)
-			.catch(this.handleError);
-	}
-	delete(id: string): Promise<void> {
-		const url = `${this.heroesUrl}/${id}`;
-		return this.http.delete(url, {headers: this.headers})
-			.toPromise()
-			.then(() => null)
-			.catch(this.handleError);
-	}
+	
 	private handleError(error: any): Promise<any> {
 		console.error('An error occurred', error); // for demo purposes only
 		return Promise.reject(error.message || error);

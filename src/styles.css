@@ -149,9 +149,9 @@ nav a.active {
 .lang-section a {
     color: #fff;
 }
-.lang-section a:first-child {
-    border-right: 1px solid #fff;
-    padding-right: 5px;
+.lang-section a:hover {
+    color: #fff;
+    font-weight: 700;
 }
 .header-nav {
     background-color: rgba(4, 74, 134, 1);
@@ -497,4 +497,13 @@ nav a.active {
 }
 a:active, a:hover {
     outline: 0;
+}
+.activeLang {
+    text-decoration: underline;
+}
+.hidden-m {
+    display: none;
+}
+.showed-m {
+    display: block;
 }
