@@ -1,7 +1,8 @@
-import { Component, OnInit,  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Trans }                from './types/trans/trans'
 import { HomeService }          from './services/homeService/home.service';
+import { AppRoutingModule }     from '../app/app-routing.module'
 
 export class Hero {
   value: string;
@@ -22,8 +23,8 @@ const HEROES: Hero[] = [
             </ul>
         </div>
          <div class="lang-section pull-right">
-            <a type="button" (click)="changeEnglish(this)" [ngClass]="ENClass">EN</a>
-            <a type="button" (click)="changeSpanish(this)" [ngClass]="ESClass">ES</a>
+            <a type="button" (click)="changeSpanishApp()" [ngClass]="ENClass">EN</a>
+            <a type="button" (click)="changeSpanishApp()" [ngClass]="ESClass">ES</a>
          </div>
         <div class="lang-section pull-right">
            
@@ -36,11 +37,8 @@ const HEROES: Hero[] = [
             </a>
         </div>
         <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
-            <a *ngFor="let nav of tr" routerLink="/{{nav}}" routerLinkActive="active" >{{nav}}</a>
+            <a *ngFor="let nav of tr" routerLink="/{{nav}}" routerLinkActive="active" >{{nav | uppercase}}</a>
         </nav>
-
-   
-
     </header>
     <div class="container">
         <router-outlet></router-outlet>
@@ -58,7 +56,7 @@ export class AppComponent implements OnInit {
 
     tr: Trans[]; 
    
-    constructor(private homeService: HomeService) { }
+    constructor(private homeService: HomeService, private appRouting: AppRoutingModule) { }
 
     convertBtnMenu(datanav: any): void {
         this.btnMenuClass = (datanav.btnMenuClass === "change") ? "" : "change";
@@ -68,29 +66,8 @@ export class AppComponent implements OnInit {
         this.collapseIn = (this.collapseIn === "in") ? "in out" : "in";
     }
 
-    changeSpanish(e: any): void{
-        var text = '';
-        var path = window.location.pathname;
-        var pathS = path.split("/");
-        pathS.join();
-        pathS.splice(2, 0, "es");
-        for(var i =0; i<pathS.length; i++) {
-            text += pathS[i] + "/";
-        }
-        (path.indexOf('es') > -1) ? window.location.pathname =  path : window.location.pathname = text;
-        
-    }
-    changeEnglish(e: any): void{
-        var text = '';
-        var path = window.location.pathname.split("/");
-        var index = path.indexOf('es');
-        if(index > -1) {
-            path.splice(index, 1);
-        }
-        for(var i =0; i<path.length; i++) {
-            text += path[i] + "/";
-        }
-        window.location.pathname =  text;
+    changeSpanishApp(): void{
+        this.appRouting.changeSpanish();
     }
 
     statusLang(): void {

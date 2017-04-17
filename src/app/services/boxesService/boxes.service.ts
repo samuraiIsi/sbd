@@ -7,12 +7,17 @@ import { Boxes } from '../../types/boxes/boxes';
 
 @Injectable()
 export class BoxesService {
-	private boxesUrl = 'api/boxes';  // URL to web api
+	private boxesENUrl = 'api/boxesEN';  // URL to web api
+	private boxesESUrl = 'api/boxesES';  // URL to web api
 
 	constructor(private http: Http) { }
 
 	getBoxes(): Promise<Boxes[]> {
-		return this.http.get(this.boxesUrl)
+		var x = window.location.pathname;
+		var y = false;
+		(x.indexOf('es') != -1) ? y = true : y = false;
+		const url = y ? `${this.boxesESUrl}` : `${this.boxesENUrl}`;
+		return this.http.get(url)
 	       .toPromise()
 	       .then(response => response.json().data as Boxes[])
 	       .catch(this.handleError);

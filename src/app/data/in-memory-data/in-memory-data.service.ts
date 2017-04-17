@@ -37,7 +37,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 lang: 'en'
             }
         ];
-        let agencies = [{
+        let agenciesEN = [{
                 id: 'aads', 
                 title: 'JUAN CARMELINO',
                 subTitle: 'lawyer',
@@ -53,8 +53,25 @@ export class InMemoryDataService implements InMemoryDbService {
                 btnLinkA: 'peru',
                 text: "Smile is a leading Sports & Media Management Company. We have a dedicated team of professionals with a thorough understanding of the Spanish Culture and Language whilst working and educated within the Anglo Saxon model. Our combined experience, our ability to balance the Anglo Saxon and Latin Business Models and Languages and our long-term close contacts within the Iberian Peninsular give the company a real edge and a unique approach.\n The Company was founded in 2003 by Kenneth Asquez. Kenneth has a strong background in the financial services industry having spent eighteen years working in senior positions with two major industry players. During this time he provided financial services to a number of professional players and Senior Executives within the Sports industry.\nIt became clear to Kenneth that these “Special Careers” would benefit from an agency with a solid understanding of financial management. Kenneth is an FA Licensed Player’s Agent since 2003 and holds a Masters in International Sports Law from Anglia Ruskin University. Using Gibraltar as a platform to operate provides Smile with a location that is cost effective, well regulated and accessible, with the unique advantages that come with being a member of the European Union."
             }
-        ]
-        let associates = [
+        ];
+        let agenciesES = [{
+                id: 'aads', 
+                title: 'JUAN CARMELINO',
+                subTitle: 'Abogado',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                btnLinkA: 'spain',
+                text: "Juan Carmona Cózar lawyer español."
+            },
+            {
+                id: 'sports-agency', 
+                title: 'Sports Agency',
+                subTitle: 'KENNETH ASQUEZ LLM  Sports Law',
+                image: '../../theme/assets/img/sports-agency.jpg',
+                btnLinkA: 'peru',
+                text: "Agencia peru en español"
+            }
+        ];
+        let associatesEN = [
             {
                 id: 'spain', 
                 title: 'JUAN CARMELINO',
@@ -97,7 +114,50 @@ export class InMemoryDataService implements InMemoryDbService {
             }
 
         ];
-        let boxes = [{
+        let associatesES = [
+            {
+                id: 'spain', 
+                title: 'JUAN CARMELINO',
+                subTitle: 'lawyer',
+                image: '../../theme/assets/img/newyork.jpg',
+                btnLinkA: 'spain',
+                text: "Juan Carmona Cózar lawyer abogado español"
+            },
+            {
+                id: 'peru', 
+                title: 'Lawyer Carlos D. Márquez',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/paris.jpg',
+                btnLinkA: 'peru',
+                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+            },
+            {
+                id: 'europe', 
+                title: 'Lawyer Carlos D. Márquez',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                btnLinkA: 'europe',
+                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+            },
+            {
+                id: 'russia', 
+                title: 'Lawyer Carlos D. Márquez',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                btnLinkA: 'russia',
+                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+            },
+            {
+                id: 'angola', 
+                title: 'Lawyer Carlos D. Márquez',
+                subTitle: 'Owner- Director',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                btnLinkA: 'angola',
+                text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment.\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
+            }
+
+        ];
+        let boxesEN = [{
                 classDiv: 'col-lg-6 col-md-6 col-xs-12',
                 articleClass: 'boxes col-lg-6 col-lg-offset-3 bg-border-img',
                 headerText: '',
@@ -130,7 +190,40 @@ export class InMemoryDataService implements InMemoryDbService {
                 ]
             }
         ];
-        let boxespanel = [{
+        let boxesES = [{
+                classDiv: 'col-lg-6 col-md-6 col-xs-12',
+                articleClass: 'boxes col-lg-6 col-lg-offset-3 bg-border-img',
+                headerText: '',
+                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                imageClass: '', 
+                name: 'Michael A. Feetham',
+                telephone: '900 300 307',
+                btnClass: 'btn--navy-blue',
+                btnText: 'Mas',
+                btnLink: 'michael',
+                mediaClass: [
+                    'fa fa-facebook',
+                    'fa fa-twitter'
+                ]
+            },
+            {
+                classDiv: 'col-lg-6 col-md-6 col-xs-12',
+                articleClass: 'boxes col-lg-6 col-lg-offset-3',
+                headerText: '',
+                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                imageClass: '',
+                name: 'Carlos D. Márquez',
+                telephone: '900 300 307',
+                btnClass: 'btn--navy-blue',
+                btnText: 'Mas',
+                btnLink: 'carlos',
+                mediaClass: [
+                    'fa fa-facebook',
+                    'fa fa-twitter'
+                ]
+            }
+        ];
+        let boxespanelEN = [{
                 classDiv: 'col-lg-4 col-md-6 col-xs-12',
                 articleClass: 'panel panel--blue-dark',
                 headerText: 'spain',
@@ -176,6 +269,52 @@ export class InMemoryDataService implements InMemoryDbService {
                 footerText: 'LEGAL REPRESENTATIVE'
             }
         ];
+        let boxespanelES = [{
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'españa',
+                image: '../../theme/assets/img/newyork.jpg',
+                imageClass: 'img-responsive',
+                btnLink: 'spain',
+                footerText: 'COMPANY ADVISER'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'peru',
+                image: '../../theme/assets/img/paris.jpg',
+                imageClass: 'img-responsive',
+                btnLink: 'peru',
+                footerText: 'COMPANY CONSULTANTS'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'europa',
+                image: '../../theme/assets/img/sanfran.jpg',
+                imageClass: 'img-responsive',
+                btnLink: 'europe',
+                footerText: "COMPANY SOLICITORS"
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12 col-lg-offset-2',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'rusia',
+                image: '../../theme/assets/img/img_chania.jpg',
+                imageClass: 'img-responsive',
+                btnLink: 'russia',
+                footerText: 'ASSOCIATES Yakovlev & Partners'
+            },
+            {
+                classDiv: 'col-lg-4 col-md-6 col-xs-12 col-md-offset-3 col-lg-offset-0',
+                articleClass: 'panel panel--blue-dark',
+                headerText: 'angola',
+                image: '../../theme/assets/img/newyork.jpg',
+                imageClass: 'img-responsive',
+                btnLink: 'angola',
+                footerText: 'LEGAL REPRESENTATIVE'
+            }
+        ];
         let agenciesBoxes = [{
                 classDiv: 'col-lg-4 col-md-6 col-xs-12 col-lg-offset-2',
                 articleClass: 'panel panel--blue-dark',
@@ -195,7 +334,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 footerText: 'KENNETH ASQUEZ LLM  Sports Law.'
             }
         ];
-        let perugib = [
+        let perugibEN = [
             {
                 title: 'Peru',
                 subTitle: 'WHY INVEST IN PERU?',
@@ -211,6 +350,30 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Gibraltar',
                 subTitle: 'WHY INVEST IN GIBRALTAR?',
                 text: 'Gibraltar is a British',
+                listTexts: [
+                    'Internationally acknowledged macroeconomic soundness',
+                    'Free trade and free market policies , economic model whose fundamental principle respect to economic freedoms',
+                    'Legal stability - contract law.',
+                    'Attractive sectors for investment.'
+                ]
+            }
+            ];
+        let perugibES = [
+            {
+                title: 'Peru',
+                subTitle: 'WHY INVEST IN PERU?',
+                text: 'En español',
+                listTexts: [
+                    'Internationally acknowledged macroeconomic soundness',
+                    'Free trade and free market policies , economic model whose fundamental principle respect to economic freedoms',
+                    'Legal stability - contract law.',
+                    'Attractive sectors for investment.'
+                ]
+            },
+            {
+                title: 'Gibraltar',
+                subTitle: 'WHY INVEST IN GIBRALTAR?',
+                text: 'Gibraltar en Español',
                 listTexts: [
                     'Internationally acknowledged macroeconomic soundness',
                     'Free trade and free market policies , economic model whose fundamental principle respect to economic freedoms',
@@ -271,7 +434,31 @@ export class InMemoryDataService implements InMemoryDbService {
                 fax: '+51-1-422-1870'
             }
         ];
-        let contactpage = [
+        let contactpageEN = [
+            {
+                divClass: 'col-lg-6 col-md-6 height-350',
+                header: 'Peru',
+                subHeader: 'Las Castañitas 138, San Isidro (Lima 27) Street',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870',
+                mapDivClass: 'col-lg-12',
+                map: 'map'
+            },
+            {
+                divClass: 'col-lg-6 col-md-6',
+                header: 'Gibraltar',
+                subHeader: 'Las Castañitas 138, San Isidro (Lima 27) Street',
+                email: 'cmarquez@gibraltar-sbd.com',
+                phone: '+51-95-510-9774',
+                mobile: '+51-997-428-789',
+                fax: '+51-1-422-1870',
+                mapDivClass: 'col-lg-12',
+                map: 'map2'
+            }
+        ];
+        let contactpageES = [
             {
                 divClass: 'col-lg-6 col-md-6 height-350',
                 header: 'Peru',
@@ -298,19 +485,25 @@ export class InMemoryDataService implements InMemoryDbService {
         
     return { 
             detailsEN,
-            detailsES, 
-            boxes, 
-            boxespanel, 
+            detailsES,
+            boxesEN, 
+            boxesES, 
+            boxespanelEN,
+            boxespanelES, 
             agenciesBoxes, 
-            associates, 
-            agencies,
+            associatesEN,
+            associatesES,  
+            agenciesEN,
+            agenciesES,
             carouselhome,
             carouselhomeES,
-            contactpage,
+            contactpageEN,
+            contactpageES,
             footer,
             navMenuEN,
             navMenuES,
-            perugib
+            perugibEN,
+            perugibES
     };
   }
 }

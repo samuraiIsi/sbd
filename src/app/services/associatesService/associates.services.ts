@@ -7,12 +7,16 @@ import { BoxesPanels } from '../../types/boxesPanels/boxes-panels';
 
 @Injectable()
 export class AssociatesService {
-	private associatesUrl = 'api/associates';  // URL to web api
+	private associatesENUrl = 'api/associatesEN';  // URL to web api
+	private associatesESUrl = 'api/associatesES';  // URL to web api
 
 	constructor(private http: Http) { }
 
 	getHero(id: string): Promise<BoxesPanels> {
-		const url = `${this.associatesUrl}/${id}`;
+		var x = window.location.pathname;
+		var y = false;
+		(x.indexOf('es') != -1) ? y = true : y = false;
+		const url = y ? `${this.associatesESUrl}/${id}` : `${this.associatesENUrl}/${id}`;
 		return this.http.get(url)
 			.toPromise()
 			.then(response => response.json().data as BoxesPanels)

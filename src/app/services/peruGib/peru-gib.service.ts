@@ -7,13 +7,18 @@ import { Accordion } from '../../types/accordion/accordion';
 
 @Injectable()
 export class PeruGibService {
-	private perugibUrl = 'api/perugib';
+	private perugibENUrl = 'api/perugibEN';
+	private perugibESUrl = 'api/perugibES';
 	private perugiImgbUrl = 'api/perugibimg';
 
 	constructor(private http: Http) { }
 
 	getInfo(): Promise<Accordion[]> {
-		return this.http.get(this.perugibUrl)
+		var path = window.location.pathname;
+		var cond = false;
+		path.indexOf('es') != -1 ? cond = true : cond = false;
+		const url = cond ? `${this.perugibESUrl}` : `${this.perugibENUrl}`;
+		return this.http.get(url)
 	       .toPromise()
 	       .then(response => response.json().data as Accordion[])
 	       .catch(this.handleError);

@@ -9,23 +9,85 @@ import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.co
 import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
 import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
 import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
+import { Injectable } from '@angular/core';
+
+var path = window.location.pathname;
+var cond = false;
+    (path.indexOf('/es') != -1) ? cond = false : cond = true;
+    let urlHome = cond ? 'home' : 'es/inicio';
+    let urlAbout = cond ? 'about' : 'es/nosotros';
+    let urlAgencies = cond ? 'agencies' : 'es/agencias';
+    let urlAssociates = cond ? 'associates' : 'es/asociados';
+    let urlPerugibraltar = cond ? 'perugibraltar' : 'es/perugibraltar';
+    let urlContact = cond ? 'contact' : 'es/contacto';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home',  component: HomePage },
-  { path: 'home/es',  component: HomePage },
-  { path: 'about/:id', component: AboutDetailComponent },
-  { path: 'about/es/:id', component: AboutDetailComponent },
-  { path: 'about', component: AboutPage },
-  { path: 'agencies/:id', component: AgenciesDetailComponent },
-  { path: 'agencies', component: AgenciesPage },
-  { path: 'associates/:id', component: AssociatesDetailComponent },
-  { path: 'associates', component: AssociatesPage },
-  { path: 'perugibraltar', component: PeruGibraltarPage },
-  { path: 'contact', component: ContactPage }
+  { path: '', redirectTo: urlHome, pathMatch: 'full' },
+  { path: urlHome,  component: HomePage },
+  { path: urlAbout + '/:id', component: AboutDetailComponent },
+  { path: urlAbout, component: AboutPage },
+  { path: urlAgencies + '/:id', component: AgenciesDetailComponent },
+  { path: urlAgencies, component: AgenciesPage },
+  { path: urlAssociates + '/:id', component: AssociatesDetailComponent },
+  { path: urlAssociates, component: AssociatesPage },
+  { path: urlPerugibraltar, component: PeruGibraltarPage },
+  { path: urlContact, component: ContactPage }
 ];
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
-export class AppRoutingModule {}
+@Injectable()
+export class AppRoutingModule {
+    changeSpanish(): void{
+        var path_string: string;
+        var path = window.location.pathname;
+        switch(path) {
+            case "/home":
+                path_string = "es/inicio";
+                break;
+            case "/es/inicio":
+                path_string = "home";
+                break;
+            case "/about":
+                path_string = "es/nosotros";
+                break;
+            case "/about/michael":
+                path_string = "es/nosotros/michael";
+                break;
+            case "/associates":
+                path_string = "es/asociados";
+                break;
+            case "/es/asociados":
+                path_string = "associates";
+                break;
+            case "/es/nosotros/michael":
+                path_string = "/about/michael";
+                break;
+            case "/es/nosotros":
+                path_string = "about";
+                break;
+            case "/agencies":
+                path_string = "es/agencias";
+                break;
+            case "/es/agencias":
+                path_string = "agencies";
+                break;
+            case "/perugibraltar":
+                path_string = "es/perugibraltar";
+                break;
+            case "/es/perugibraltar":
+                path_string = "perugibraltar";
+                break;
+            case "/contact":
+                path_string = "es/contacto";
+                break;
+            case "/es/contacto":
+                path_string = "contact";
+                break;
+            default:
+                path_string = "404";
+        }
+        window.location.pathname =  path.replace(path, path_string);
+    }
+}

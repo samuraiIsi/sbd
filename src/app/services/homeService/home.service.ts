@@ -28,7 +28,7 @@ export class HomeService {
 	getNavMenu(): Promise<Trans[]> {
 		var path = window.location.pathname;
 		var cond = false;
-		path.indexOf('es') != -1 ? cond = true : cond = false;
+		path.indexOf('/es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.navMenuESUrl}` : `${this.navMenuENUrl}`;
 		return this.http.get(url)
 	       .toPromise()

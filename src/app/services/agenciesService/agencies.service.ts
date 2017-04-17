@@ -7,8 +7,9 @@ import { BoxesPanels } from '../../types/boxesPanels/boxes-panels';
 
 @Injectable()
 export class AgenciesService {
-	private agenciesUrl = 'api/agenciesBoxes';  // URL to web api
-	private agenciesInfoUrl = 'api/agencies';
+	private agenciesUrl = 'api/agenciesBoxes';
+	private agenciesInfoENUrl = 'api/agenciesEN';
+	private agenciesInfoESUrl = 'api/agenciesES';
 
 	constructor(private http: Http) { }
 
@@ -19,7 +20,10 @@ export class AgenciesService {
 	       .catch(this.handleError);
 	}
 	getHero(id: string): Promise<BoxesPanels> {
-		const url = `${this.agenciesInfoUrl}/${id}`;
+		var x = window.location.pathname;
+		var y = false;
+		(x.indexOf('es') != -1) ? y = true : y = false;
+		const url = y ? `${this.agenciesInfoESUrl}/${id}` : `${this.agenciesInfoENUrl}/${id}`;
 		return this.http.get(url)
 			.toPromise()
 			.then(response => response.json().data as BoxesPanels)

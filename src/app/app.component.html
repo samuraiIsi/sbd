@@ -7,7 +7,10 @@
         </ul>
     </div>
     <div class="lang-section pull-right">
-        <a *ngFor="let lang of supportedLanguages" (click)="selectLang(lang.value)"> {{ lang.display }} </a>
+        <a type="button" (click)="changeEnglish(this)" [ngClass]="ENClass">EN</a>
+        <a type="button" (click)="changeSpanish(this)" [ngClass]="ESClass">ES</a>
+    </div>
+    <div class="lang-section pull-right">
     </div>
     <div class="container-btn-menu pull-right" [ngClass]="btnMenuClass" (click)="convertBtnMenu(this)">
         <a href="javascript:void(0);" (click)="dropDownTopMenu()">
@@ -17,20 +20,6 @@
         </a>
     </div>
     <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
-        <a routerLink="/home" routerLinkActive="active">Home</a>
-        <a routerLink="/about" routerLinkActive="active">About</a>
-        <a routerLink="/associates" routerLinkActive="active">Associates</a>
-        <a routerLink="/agencies" routerLinkActive="active">Agencies</a>
-        <a routerLink="/perugibraltar" routerLinkActive="active">Peru & Gibraltar</a>
-        <a routerLink="/contact" routerLinkActive="active">Contact</a>
+        <a *ngFor="let nav of tr" routerLink="/{{nav}}" routerLinkActive="active">{{nav | uppercase}}</a>
     </nav>
-    <p>
-        <strong style="color: white">{{ 'hello world' | translate }}</strong>
-    </p>
-    <p>
-        <strong style="color: white">{{ translatedText }}</strong>
-    </p>
 </header>
-<div class="container">
-    <router-outlet></router-outlet>
-</div>
