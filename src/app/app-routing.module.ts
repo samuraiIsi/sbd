@@ -11,9 +11,6 @@ import { AssociatesDetailComponent }   from '../app/shared/associates-details/as
 import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 import { Injectable }                  from '@angular/core';
 
-import { Trans }                       from './types/trans/trans';
-import { HomeService }                 from '../app/services/homeService/home.service';
-
 var path = window.location.pathname;
 var cond = false;
     (path.indexOf('/es') != -1) ? cond = false : cond = true;
@@ -44,17 +41,6 @@ const routes: Routes = [
 
 @Injectable()
 export class AppRoutingModule {
-    trES: Trans;
-    trEN: Trans;
-
-    constructor(private homeService: HomeService) {}
-    getNavES(): void {
-        this.homeService.getNavES().then(trES => this.trES = trES);
-    }
-    getNavEN(): void {
-        this.homeService.getNavEN().then(trEN => this.trEN = trEN);
-
-    }
     changeSpanish(): void{
         var path_string: string;
         var text: string;
