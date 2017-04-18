@@ -37,7 +37,7 @@ const HEROES: Hero[] = [
             </a>
         </div>
         <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
-            <a *ngFor="let nav of tr" routerLink="/{{nav}}" routerLinkActive="active" >{{nav | uppercase}}</a>
+            <a *ngFor="let nav of tr" routerLink="/{{nav.display}}" routerLinkActive="active" >{{nav.value | uppercase}}</a>
         </nav>
     </header>
     <div class="container">
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     private ESClass: string;
     private isActive?: boolean;
 
-    tr: Trans[]; 
+    tr: Trans; 
    
     constructor(private homeService: HomeService, private appRouting: AppRoutingModule) { }
 

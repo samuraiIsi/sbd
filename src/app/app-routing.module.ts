@@ -1,15 +1,18 @@
-import { NgModule }             from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomePage }   			    from '../app/pages/home/home.page';
-import { AboutPage }      		  from '../app/pages/about/about.page';
-import { AgenciesPage }			    from '../app/pages/agencies/agencies.page';
-import { AssociatesPage }		    from '../app/pages/associates/associates.page';
-import { ContactPage }			    from '../app/pages/contact/contact.page';
-import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.component';
-import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
-import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
-import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
-import { Injectable } from '@angular/core';
+import { NgModule }                    from '@angular/core';
+import { RouterModule, Routes }        from '@angular/router';
+import { HomePage }   			       from '../app/pages/home/home.page';
+import { AboutPage }      		       from '../app/pages/about/about.page';
+import { AgenciesPage }			       from '../app/pages/agencies/agencies.page';
+import { AssociatesPage }		       from '../app/pages/associates/associates.page';
+import { ContactPage }			       from '../app/pages/contact/contact.page';
+import { AboutDetailComponent }        from '../app/shared/aboutDetails/about-detail.component';
+import { AgenciesDetailComponent }     from '../app/shared/agencies-details/agencies-details.component';
+import { AssociatesDetailComponent }   from '../app/shared/associates-details/associates-detail.component';
+import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peru-gibraltar.page';
+import { Injectable }                  from '@angular/core';
+
+import { Trans }                       from './types/trans/trans';
+import { HomeService }                 from '../app/services/homeService/home.service';
 
 var path = window.location.pathname;
 var cond = false;
@@ -33,16 +36,46 @@ const routes: Routes = [
   { path: urlPerugibraltar, component: PeruGibraltarPage },
   { path: urlContact, component: ContactPage }
 ];
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
+
 @Injectable()
 export class AppRoutingModule {
+    trES: Trans;
+    trEN: Trans;
+
+    constructor(private homeService: HomeService) {}
+    getNavES(): void {
+        this.homeService.getNavES().then(trES => this.trES = trES);
+    }
+    getNavEN(): void {
+        this.homeService.getNavEN().then(trEN => this.trEN = trEN);
+
+    }
     changeSpanish(): void{
         var path_string: string;
+        var text: string;
+        var mainpath: string;
+        var addedPath: string;
         var path = window.location.pathname;
-        switch(path) {
+        var pathS = path.split("/");
+        var pathES = pathS.indexOf('es'); 
+        if(pathES != -1 && pathS.length > 3) {
+            var x = path.lastIndexOf("/");
+            addedPath = path.slice(x);
+            mainpath = path.slice(0, x);
+            //alert(mainpath);
+        } else if (pathES == -1 && pathS.length > 2) {
+            var x = path.lastIndexOf("/");
+            addedPath = path.slice(x);
+            mainpath = path.slice(0, x);
+        } else {
+            mainpath = path;
+        }
+        switch(mainpath) {
             case "/home":
                 path_string = "es/inicio";
                 break;
@@ -86,8 +119,14 @@ export class AppRoutingModule {
                 path_string = "contact";
                 break;
             default:
-                path_string = "404";
+                path_string = "home";
         }
-        window.location.pathname =  path.replace(path, path_string);
+        if(pathES !== -1 && pathS.length > 3) {
+            window.location.pathname =  mainpath.replace(mainpath, path_string + addedPath);
+        } else if(pathES == -1 && pathS.length > 2) {
+            window.location.pathname =  mainpath.replace(mainpath, path_string + addedPath);
+        } else {
+            window.location.pathname =  mainpath.replace(mainpath, path_string);
+        }
     }
 }

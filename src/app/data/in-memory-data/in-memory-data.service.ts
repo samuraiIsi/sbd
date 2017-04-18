@@ -3,8 +3,22 @@ import { AboutService} from '../../services/aboutService/about.service'
 
 export class InMemoryDataService implements InMemoryDbService {
     createDb() {
-        let navMenuEN = ["home", "about", "associates", "agencies", "perugibraltar", "contact"];
-        let navMenuES = ["inicio", "nosotros", "asociados", "agencias", "perugibraltar", "contacto"];
+        let navMenuEN = [
+            {display: "home", value:"home"},
+            {display: "about", value: "about"},
+            {display: "associates", value: "associates"},
+            {display: "agencies", value: "agencies"},
+            {display: "perugibraltar", value: "Peru & Gibraltar"},
+            {display: "contact", value: "contact"}
+        ];
+        let navMenuES = [
+            {display: "es/inicio", value:"inicio"},
+            {display: "es/nosotros", value: "nosotros"},
+            {display: "es/asociados", value: "asociados"},
+            {display: "es/agencias", value: "agencias"},
+            {display: "es/perugibraltar", value: "Peru y Gibraltar"},
+            {display: "es/contacto", value: "contacto"}
+        ];
         let detailsEN = [{
                 id: 'michael', 
                 title: 'Honourable Michael A. Feetham',

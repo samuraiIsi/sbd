@@ -25,14 +25,28 @@ export class HomeService {
 	       .catch(this.handleError);
 	}
 
-	getNavMenu(): Promise<Trans[]> {
+	getNavES(): Promise<Trans> {
+		return this.http.get(this.navMenuESUrl)
+	       .toPromise()
+	       .then(response => response.json().data as Trans)
+	       .catch(this.handleError);
+	}
+
+	getNavEN(): Promise<Trans> {
+		return this.http.get(this.navMenuENUrl)
+	       .toPromise()
+	       .then(response => response.json().data as Trans)
+	       .catch(this.handleError);
+	}
+
+	getNavMenu(): Promise<Trans> {
 		var path = window.location.pathname;
 		var cond = false;
 		path.indexOf('/es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.navMenuESUrl}` : `${this.navMenuENUrl}`;
 		return this.http.get(url)
 	       .toPromise()
-	       .then(response => response.json().data as Trans[])
+	       .then(response => response.json().data as Trans)
 	       .catch(this.handleError);
 	}
 	

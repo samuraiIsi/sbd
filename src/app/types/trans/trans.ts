@@ -1,3 +1,4 @@
 export class Trans {
-  text: string;
+  display: string;
+  value: string;
 }
