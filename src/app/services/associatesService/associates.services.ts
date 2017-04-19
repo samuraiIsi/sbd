@@ -7,15 +7,16 @@ import { BoxesPanels } from '../../types/boxesPanels/boxes-panels';
 
 @Injectable()
 export class AssociatesService {
-	private associatesENUrl = 'api/associatesEN';  // URL to web api
-	private associatesESUrl = 'api/associatesES';  // URL to web api
+	private associatesENUrl = 'api/associatesEN';
+	private associatesESUrl = 'api/associatesES';
 
 	constructor(private http: Http) { }
 
 	getHero(id: string): Promise<BoxesPanels> {
 		var x = window.location.pathname;
 		var y = false;
-		(x.indexOf('es') != -1) ? y = true : y = false;
+		let response: string 
+		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.associatesESUrl}/${id}` : `${this.associatesENUrl}/${id}`;
 		return this.http.get(url)
 			.toPromise()
@@ -23,7 +24,7 @@ export class AssociatesService {
 			.catch(this.handleError);
 	}
 	private handleError(error: any): Promise<any> {
-		console.error('An error occurred', error); // for demo purposes only
+		console.error('An error occurred', error);
 		return Promise.reject(error.message || error);
 	}
 }

@@ -21,7 +21,7 @@ export class AboutService {
 	getDetails(id: string): Promise<Details> {
 		var x = window.location.pathname;
 		var y = false;
-		(x.indexOf('es') != -1) ? y = true : y = false;
+		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.detailsESUrl}/${id}` : `${this.detailsENUrl}/${id}`;
 		return this.http.get(url)
 			.toPromise()

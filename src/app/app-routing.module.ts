@@ -11,6 +11,9 @@ import { AssociatesDetailComponent }   from '../app/shared/associates-details/as
 import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 import { Injectable }                  from '@angular/core';
 
+let navMenuEN = ["/home", "/about", "/associates", "/agencies", "/perugibraltar", "/contact"];
+let navMenuES = ["/es/inicio", "/es/nosotros", "/es/asociados", "/es/agencias", "/es/perugibraltar", "/es/contacto"];
+
 var path = window.location.pathname;
 var cond = false;
     (path.indexOf('/es') != -1) ? cond = false : cond = true;
@@ -53,7 +56,6 @@ export class AppRoutingModule {
             var x = path.lastIndexOf("/");
             addedPath = path.slice(x);
             mainpath = path.slice(0, x);
-            //alert(mainpath);
         } else if (pathES == -1 && pathS.length > 2) {
             var x = path.lastIndexOf("/");
             addedPath = path.slice(x);
@@ -61,52 +63,18 @@ export class AppRoutingModule {
         } else {
             mainpath = path;
         }
-        switch(mainpath) {
-            case "/home":
-                path_string = "es/inicio";
-                break;
-            case "/es/inicio":
-                path_string = "home";
-                break;
-            case "/about":
-                path_string = "es/nosotros";
-                break;
-            case "/about/michael":
-                path_string = "es/nosotros/michael";
-                break;
-            case "/associates":
-                path_string = "es/asociados";
-                break;
-            case "/es/asociados":
-                path_string = "associates";
-                break;
-            case "/es/nosotros/michael":
-                path_string = "/about/michael";
-                break;
-            case "/es/nosotros":
-                path_string = "about";
-                break;
-            case "/agencies":
-                path_string = "es/agencias";
-                break;
-            case "/es/agencias":
-                path_string = "agencies";
-                break;
-            case "/perugibraltar":
-                path_string = "es/perugibraltar";
-                break;
-            case "/es/perugibraltar":
-                path_string = "perugibraltar";
-                break;
-            case "/contact":
-                path_string = "es/contacto";
-                break;
-            case "/es/contacto":
-                path_string = "contact";
-                break;
-            default:
-                path_string = "home";
-        }
+        var getNavItemEN = navMenuEN.indexOf(mainpath);
+        var getNavItemES = navMenuES.indexOf(mainpath);
+            switch(mainpath) {
+                case navMenuEN[getNavItemEN]:
+                    path_string = navMenuES[getNavItemEN];
+                    break;
+                case navMenuES[getNavItemES]:
+                    path_string = navMenuEN[getNavItemES];
+                    break;
+                default:
+                    path_string = "home";
+            }
         if(pathES !== -1 && pathS.length > 3) {
             window.location.pathname =  mainpath.replace(mainpath, path_string + addedPath);
         } else if(pathES == -1 && pathS.length > 2) {

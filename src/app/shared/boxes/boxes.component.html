@@ -10,13 +10,6 @@
                 </div>
                 <img [src]="box.image" [class]="box.imageClass">
             </a>
-            <!-- <figcaption *ngIf="box.mediaClass">
-                <div class="social-medias">
-                    <ul>
-                        <li *ngFor="let media of box.mediaClass"><a data-original-title="Facebook" href=""><i [class]="media"></i></a></li>
-                    </ul>
-                </div>
-            </figcaption> -->
         </figure>
         <div class="text" *ngIf="box.btnClass">
             <header>
@@ -27,7 +20,7 @@
                 <span>Telephone</span>
                 <p>{{box.telephone}}</p>
             </div>
-            <a [routerLink]="['/about', box.btnLink]" [class]="box.btnClass">{{box.btnText}}</a>
+            <a [routerLink]="[box.btnLink]" [class]="box.btnClass">{{box.btnText}}</a>
         </div>
         <div class="panel-footer panel--blue-dark" *ngIf="box.footerText">{{box.footerText}}</div>
     </article>
