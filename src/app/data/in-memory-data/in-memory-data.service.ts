@@ -19,6 +19,8 @@ export class InMemoryDataService implements InMemoryDbService {
             {display: "es/perugibraltar", value: "Peru y Gibraltar"},
             {display: "es/contacto", value: "contacto"}
         ];
+        let aboutTextEN = [{text:"GIBRALTAR STRATEGIC BUSINESS DEVELOPMENT is a company conceived with the aim of promoting the opening of markets in Latin America, mainly in Peru, to International European companies established in Gibraltar, United Kingdom, Israel, Russia, among others, in the areas of mining, automotive, military, construction and real estate markets, oil, energy, online games, sports representation services and legal services.\nSimilarly, Gibraltar SBD has promoted Peruvian investment income and capital and Latin American to European markets, offering highly competitive banking, financial and tax solutions for any country in the European Community. Gibraltar SBD is also in a position to open up markets in Europe for placing biodiversity of raw materials and products of the Latin America region.\nThe strength of Gibraltar SBD lies in the combination of its partners who have an unblemished personal history, professional and political experience in European governments, this in addition to the Peruvian legal practice and technical team to implement large projects with efficiency and diligence ."}];
+        let aboutTextES = [{text:"GIBRALTAR STRATEGIC BUSINESS DEVELOPMENT es una compañía concebida con la finalidad de promover la apertura de mercados en América Latina, principalmente en el Perú, a empresas europeas de gran envergadura asentadas en Gibraltar, Reino Unido, Dinamarca, Israel, Rusia, entre otros, en rubros mineros, automotriz, militar, mercados de construcción e inmobiliarios, petróleo, energía, juegos online, servicios de representación de deportistas y servicios jurídicos.\nDe igual forma, Gibraltar SBD viene promoviendo el ingreso de inversiones y capital peruano y latinoamericano al mercado europeo, ofreciendo soluciones bancarias, financieras y tributarias altamente competitivas respecto de cualquier país de la Comunidad Europea. Gibraltar SBD además está en posición de abrir mercados en Europa para la colocación de la biodiversidad de materia prima y productos de la región Latinoamérica.\nLa fortaleza de Gibraltar SBD radica en la conjunción de sus socios quienes cuentan con una trayectoria personal intachable, experiencia profesional y experiencia política en Gobiernos Europeos, esto en adición a la práctica legal peruana y equipo técnico para poner en marcha grandes proyectos con eficiencia y diligencia”."}];
         let detailsEN = [{
                 id: 'michael', 
                 title: 'Honourable Michael A. Feetham',
@@ -515,23 +517,25 @@ export class InMemoryDataService implements InMemoryDbService {
             }
         ];
         
-    return { 
-            detailsEN,
-            detailsES,
-            boxesEN, 
-            boxesES, 
-            boxespanelEN,
-            boxespanelES, 
+    return {
+            aboutTextEN,
+            aboutTextES,
             agenciesBoxesEN,
             agenciesBoxesES, 
             associatesEN,
             associatesES,  
             agenciesEN,
             agenciesES,
+            boxesEN, 
+            boxesES, 
+            boxespanelEN,
+            boxespanelES, 
             carouselhome,
             carouselhomeES,
             contactpageEN,
             contactpageES,
+            detailsEN,
+            detailsES,
             footer,
             navMenuEN,
             navMenuES,

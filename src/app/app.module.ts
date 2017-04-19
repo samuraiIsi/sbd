@@ -26,6 +26,7 @@ import { HeroSearchComponent }  from '../app/shared/heroSearch/hero-search.compo
 import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.component';
 import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
 import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
+import { TextComponent }        from '../app/shared/textOnly/text-only.component';
 import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 
 import { Boxes }                from '../app/types/boxes/boxes';
@@ -70,6 +71,7 @@ import { TranslateService }     from '../app/services/translationService/transla
         BasicStructurePageComponent,
         ContactPage,
         HeroSearchComponent,
+        TextComponent,
         PeruGibraltarPage
     ],
     providers: [ 
