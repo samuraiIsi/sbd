@@ -1,17 +1,21 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Injectable } 					from '@angular/core';
+import { Http } 						from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Trans } from '../../types/trans/trans';
-import { Carousel } from '../../types/carousel/carousel';
+import { Boxes }                		from '../../types/boxes/boxes';
+import { Trans } 						from '../../types/trans/trans';
+import { Carousel } 					from '../../types/carousel/carousel';
 
 @Injectable()
 export class HomeService {
-	private carouselHomeUrl = 'api/carouselhome';  
+	private carouselHomeUrl = 	'api/carouselhome';  
 	private carouselHomeESUrl = 'api/carouselhomeES';
-	private navMenuENUrl = 'api/navMenuEN';
-	private navMenuESUrl = 'api/navMenuES';
+	private navMenuENUrl = 		'api/navMenuEN';
+	private navMenuESUrl = 		'api/navMenuES';
+	private homeBoxesENUrl = 	'api/homeBoxesEN';
+	private homeBoxesESUrl = 	'api/homeBoxesES';
+
 	constructor(private http: Http) { }
 
 	getCarousel(): Promise<Carousel[]> {
@@ -22,6 +26,17 @@ export class HomeService {
 		return this.http.get(url)
 	       .toPromise()
 	       .then(response => response.json().data as Carousel[])
+	       .catch(this.handleError);
+	}
+
+	getHomeBoxes(): Promise<Boxes[]> {
+		var x = window.location.pathname;
+		var y = false;
+		(x.indexOf('/es') != -1) ? y = true : y = false;
+		const url = y ? `${this.homeBoxesESUrl}` : `${this.homeBoxesENUrl}`;
+		return this.http.get(url)
+	       .toPromise()
+	       .then(response => response.json().data as Boxes[])
 	       .catch(this.handleError);
 	}
 

@@ -3,6 +3,7 @@ import { Headers, Http } 				from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
+
 import { Details } 						from '../../types/details/details';
 import { TextOnly } 					from '../../types/textOnly/text-only';
 
@@ -12,6 +13,7 @@ export class AboutService {
 	private detailsESUrl = 'api/detailsES';
 	private aboutTextENUrl = 'api/aboutTextEN';
 	private aboutTextESUrl = 'api/aboutTextES';
+	
 	constructor(private http: Http) { }
 
 	getAboutText(): Promise<TextOnly[]> {

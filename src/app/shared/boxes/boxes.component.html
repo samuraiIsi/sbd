@@ -13,12 +13,13 @@
         </figure>
         <div class="text" *ngIf="box.btnClass">
             <header>
-                <span>Owner-Director</span>
+                <span *ngIf="box.prof">{{box.prof}}</span>
                 <h2 class="cs-post-title"><a href="">{{box.name}}</a></h2>
             </header>
-            <div class="tel-details col-lg-6">
-                <span>Telephone</span>
-                <p>{{box.telephone}}</p>
+            <div [class]="box.boxTextArea"> <!-- make it flexible, adding col-lg-6 ot box-text-->
+                <span *ngIf="box.telephoneText">{{box.telephoneText}}</span>
+                <p *ngIf="box.telephoneText">{{box.telephone}}</p>
+                <p *ngIf="box.boxText">{{box.boxText}}</p>
             </div>
             <a [routerLink]="[box.btnLink]" [class]="box.btnClass">{{box.btnText}}</a>
         </div>
