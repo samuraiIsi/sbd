@@ -558,7 +558,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ];
         let contactpageEN = [
             {
-                divClass: 'col-lg-6 col-md-6 height-350',
+                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img',
                 header: 'Peru',
                 subHeader: 'Las Castañitas 138, San Isidro (Lima 27) Street',
                 email: 'cmarquez@gibraltar-sbd.com',
@@ -582,7 +582,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ];
         let contactpageES = [
             {
-                divClass: 'col-lg-6 col-md-6 height-350',
+                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img',
                 header: 'Peru',
                 subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
                 email: 'cmarquez@gibraltar-sbd.com',

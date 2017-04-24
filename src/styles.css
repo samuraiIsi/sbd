@@ -184,7 +184,7 @@ nav a.active {
 .fs23 {
     font-size: 23px;
 }
-.height-350 {
+.min-height-contact {
     height: 350px;
 }
 .angular-with-newlines {
@@ -215,6 +215,7 @@ nav a.active {
 .footer {
     background-color: #055194;
     padding: 1px;
+    margin-top: 10px;
     min-height: 140px;
     line-height: 1.5;
     font-size: 11px;
@@ -363,6 +364,9 @@ nav a.active {
     .slider, .slider li img {
         height: 230px;
     }
+    .min-height-contact {
+        height: 175px;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -373,32 +377,11 @@ nav a.active {
         font-size: 20px;
     }
 }
-/* ----- Navigation ----- */
-/*@media screen and (max-width: 767px) {
-    .container-btn-menu {
-        display: inline-block;
-        margin-bottom: 5px;
-    }
-}
-@media screen and (max-width: 767px){
-    ul.topnav.in, ul.topnav.out {
-        background-color: #fff;
-        border-radius: 0;
-        margin: 0 -30px 0 -30px;
-        padding: 0;
-    }
-    ul.topnav.in a {
-        padding: 10px;
-        border-top: solid 1px #ffe6e6;
-        display: block;
-    }
-}*/
 
 /*----- mediaQueries -------*/
 
-@media screen and (min-width: 769px) { .menu { width: 720px !important; text-align: center;}}
+@media screen and (min-width: 768px) { .menu { width: 720px !important; text-align: center;}}
 
-/*@media screen and (min-width: 640px) { .footer div { float: none !important; }}*/
 @media screen and (max-width: 414px) {
     .footer div {
         width: 100%;
@@ -412,7 +395,7 @@ nav a.active {
         font-size: 8px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .menu { margin: 65px -30px 0 -30px; }
     .menu a {
         border-radius: 0;
