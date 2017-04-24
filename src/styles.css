@@ -273,7 +273,6 @@ nav a.active {
 
 .slider {
     width: 100%;
-    height: 500px;
     margin: 0 auto;
     margin-bottom: 30px;
     position: relative;
@@ -289,7 +288,6 @@ nav a.active {
   list-style: none;
 }
 .slider li img {
-  height: 500px;
   width: 100%;
 }
 .slide1,.slide2 {
@@ -351,13 +349,30 @@ nav a.active {
 .carousel-caption-m p {
     line-height: 1;
 }
-
-@media screen and (max-width: 412px) {
+@media screen and (min-width: 769px) {
     .slider, .slider li img {
-        height: 325px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .slider, .slider li img {
+        height: 315px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slider, .slider li img {
+        height: 230px;
     }
 }
 
+@media screen and (max-width: 414px) {
+    .slider, .slider li img {
+        height: 125px;
+    }
+    .carousel-caption-m h1 {
+        font-size: 20px;
+    }
+}
 /* ----- Navigation ----- */
 /*@media screen and (max-width: 767px) {
     .container-btn-menu {
@@ -532,6 +547,6 @@ a:active, a:hover {
     padding-right: 0 !important;
 }
 .min-height-container {
-    
+
 }
 /* --------- End Specific Styles ---------*/
