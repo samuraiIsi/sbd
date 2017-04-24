@@ -524,3 +524,14 @@ a:active, a:hover {
     width: 80%;
     margin: auto;
 }
+/* --------- Specific Styles ---------*/
+.padding-l {
+    padding-left: 0 !important;
+}
+.padding-r {
+    padding-right: 0 !important;
+}
+.min-height-container {
+    
+}
+/* --------- End Specific Styles ---------*/
