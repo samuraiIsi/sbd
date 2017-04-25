@@ -40,7 +40,9 @@ const HEROES: Hero[] = [
             <a *ngFor="let nav of tr" routerLink="/{{nav.display}}" routerLinkActive="active" >{{nav.value | uppercase}}</a>
         </nav>
     </header>
+    <div id="body-wrapper">
         <router-outlet></router-outlet>
+    </div>
   `
 })
 

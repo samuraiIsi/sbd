@@ -1,5 +1,21 @@
 /* Master Styles */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container-wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#body-wrapper {
+    padding-bottom: 150px;
+}
+
 h1 {
     color: #369;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,11 +28,6 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
 }
-
-body {
-    margin: 2em;
-}
-
 body,
 input[text],
 button {
@@ -51,9 +62,11 @@ button:disabled {
 
 
 /* Navigation link styles */
+
 nav {
     padding: 10px 0 0;
 }
+
 nav a {
     padding: 5px 10px;
     text-decoration: none;
@@ -142,9 +155,11 @@ nav a.active {
 .menu {
     margin: 0 auto;
 }
-.lang-section  {
+
+.lang-section {
     margin-top: 15px;
 }
+
 .lang-section a {
     color: #fff;
     background-color: #077adf;
@@ -152,12 +167,14 @@ nav a.active {
     border-radius: 50%;
     padding: 3px;
 }
+
 .lang-section a:hover {
     background-color: #2093f8;
     color: #fff;
     font-weight: 700;
     text-decoration: none;
 }
+
 .header-nav {
     background-color: rgba(4, 74, 134, 1);
     padding: 5px 10px 0px 20px;
@@ -177,16 +194,11 @@ nav a.active {
 .header-nav .logo-area ul li {
     list-style: none;
 }
-.fs20 {
-    font-size: 20px;
-}
 
-.fs23 {
-    font-size: 23px;
-}
 .min-height-contact {
     height: 350px;
 }
+
 .angular-with-newlines {
     white-space: pre-wrap;
 }
@@ -208,29 +220,30 @@ nav a.active {
     cursor: pointer;
 }
 
-.container {
-    min-height: 715px;
-}
-
 .footer {
     background-color: #055194;
-    padding: 1px;
-    margin-top: 10px;
-    min-height: 140px;
-    line-height: 1.5;
-    font-size: 11px;
+    bottom: 0;
     color: #fff;
+    font-size: 11px;
+    height: 130px;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
 }
+
 .footer h3 {
     font-size: 15px;
 }
+
 .footer p {
-    margin: 0; 
+    margin: 0;
 }
+
 .footer p a {
     color: #fff;
     text-decoration: underline;
 }
+
 .oblique {
     font-style: oblique;
 }
@@ -249,6 +262,7 @@ nav a.active {
     height: 300px;
 }
 
+
 /* ---- Buttons ---- */
 
 .btn--green {
@@ -258,9 +272,11 @@ nav a.active {
     max-height: 24px;
     line-height: 12px;
 }
+
 .btn--green:hover {
     background-color: #00ccb1;
 }
+
 .btn {
     background-repeat: repeat-x;
     line-height: 1 !important;
@@ -269,7 +285,10 @@ nav a.active {
     transition: background-color .20s linear;
 }
 
+
 /* ---- End Buttons ---- */
+
+
 /* ---- Carousel ---*/
 
 .slider {
@@ -280,54 +299,87 @@ nav a.active {
     display: block;
     padding-left: 0;
 }
+
 .slider:hover {
-  -moz-animation-play-state: paused;
+    -moz-animation-play-state: paused;
     -webkit-animation-play-state: paused;
     animation-play-state: paused;
 }
-.slider li {
-  list-style: none;
-}
-.slider li img {
-  width: 100%;
-}
-.slide1,.slide2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.slider1 {
-    opacity: 
-}
-.slide1 {
-  /*background: url(./../theme/assets/img/machu-pichu-xbig.jpg)no-repeat center;*/
-      background-size: cover;
-    animation:fade 12s infinite;
--webkit-animation:fade 12s infinite;
 
-} 
+.slider li {
+    list-style: none;
+}
+
+.slider li img {
+    width: 100%;
+}
+
+.slide1,
 .slide2 {
-  /*background: url(./../theme/assets/img/gib-xbig.jpg)no-repeat center;*/
-      background-size: cover;
-    animation:fade2 12s infinite;
--webkit-animation:fade2 12s infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-@keyframes fade
-{
-  0%   { opacity: 1}
-  42%  { opacity: 1}
-  50%  { opacity: 0}
-  95% { opacity: 0}
-  100% { opacity: 1}
+
+.slider1 {
+    opacity:
 }
-@keyframes fade2
-{
-  0%   {opacity:0; z-index: -1;}
-  45%  { opacity: 0; z-index: -1;}
-  50% { opacity: 1; z-index: 1;}
-  92% { opacity: 1; z-index: 1;}
-  100% { opacity: 0; z-index: -1;}
+
+.slide1 {
+    /*background: url(./../theme/assets/img/machu-pichu-xbig.jpg)no-repeat center;*/
+    background-size: cover;
+    animation: fade 12s infinite;
+    -webkit-animation: fade 12s infinite;
 }
+
+.slide2 {
+    /*background: url(./../theme/assets/img/gib-xbig.jpg)no-repeat center;*/
+    background-size: cover;
+    animation: fade2 12s infinite;
+    -webkit-animation: fade2 12s infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1
+    }
+    42% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    95% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+        z-index: -1;
+    }
+    45% {
+        opacity: 0;
+        z-index: -1;
+    }
+    50% {
+        opacity: 1;
+        z-index: 1;
+    }
+    92% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
 .carousel-caption-m {
     color: #f2f2f2;
     font-size: 15px;
@@ -350,18 +402,27 @@ nav a.active {
 .carousel-caption-m p {
     line-height: 1;
 }
+
 @media screen and (min-width: 769px) {
-    .slider, .slider li img {
+    .slider,
+    .slider li img {
         height: 500px;
     }
+    .fs20--md {
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width: 950px) {
-    .slider, .slider li img {
+    .slider,
+    .slider li img {
         height: 315px;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .slider, .slider li img {
+    .slider,
+    .slider li img {
         height: 230px;
     }
     .min-height-contact {
@@ -370,19 +431,44 @@ nav a.active {
 }
 
 @media screen and (max-width: 414px) {
-    .slider, .slider li img {
+    .slider,
+    .slider li img {
         height: 125px;
     }
     .carousel-caption-m h1 {
         font-size: 20px;
     }
+    .img-text-pages {
+        width: 100% !important;
+    }
 }
+
 
 /*----- mediaQueries -------*/
 
-@media screen and (min-width: 768px) { .menu { width: 720px !important; text-align: center;}}
-
-@media screen and (max-width: 414px) {
+@media screen and (min-width: 768px) {
+    .menu {
+        width: 720px !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 628px) {
+    .footer {
+        font-size: 10px !important;
+    }
+}
+@media screen and (min-width: 414px) and (max-width: 545px){
+    .footer {
+        height: 170px !important;
+    }
+}
+@media screen and (max-width: 542px) {
+    .footer {
+        height: 240px !important;
+    }
+    #body-wrapper {
+        padding-bottom: 240px;
+    }
     .footer div {
         width: 100%;
         float: none;
@@ -395,8 +481,11 @@ nav a.active {
         font-size: 8px;
     }
 }
+
 @media screen and (max-width: 767px) {
-    .menu { margin: 65px -30px 0 -30px; }
+    .menu {
+        margin: 65px -30px 0 -30px;
+    }
     .menu a {
         border-radius: 0;
         display: inline-block !important;
@@ -414,122 +503,201 @@ nav a.active {
         overflow-x: hidden;
         padding: 0;
     }
-    .bg-border-img { background: url(../../theme/assets/img/bg-border.png) repeat-x left bottom; }
+    .bg-border-img {
+        background: url(../../theme/assets/img/bg-border.png) repeat-x left bottom;
+    }
     .container-btn-menu {
         display: inline-block !important;
         margin-bottom: 5px;
         margin-right: 20px;
     }
-
+    .fs13--xs {
+        font-size: 13px;
+    }
+    .fs24--xs {
+        font-size: 24px;
+    }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1060px) {
     .logo-area ul li:last-child {
         font-size: 5px;
     }
-}            
-@media screen and (min-width: 768px) and (max-width: 830px) { 
+}
+
+@media screen and (min-width: 768px) and (max-width: 830px) {
     .menu a {
         margin-right: 0;
     }
 }
+
+
 /*----- End mediaQueries -------*/
+
+
 /*----- Responsive Menu -------*/
+
 .container-btn-menu {
     display: none;
 }
+
 .bar1 {
     margin-top: 3px;
 }
+
 .bar3 {
     margin-bottom: 0 !important;
 }
-.bar1, .bar2, .bar3 {
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
     transition: .4s;
 }
-.bar1, .bar2, .bar3 {
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
     transition: .4s;
 }
+
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px,6px);
-    transform: rotate(-45deg) translate(-9px,6px);
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
+
 .change .bar2 {
     opacity: 0;
 }
+
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px,-8px);
-    transform: rotate(45deg) translate(-8px,-8px);
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }
+
 .navbar-collapse-m.in {
     overflow-y: auto;
 }
+
 .in {
-    -webkit-animation: dropDownIn 250ms linear; /* Chrome, Safari, Opera */
+    -webkit-animation: dropDownIn 250ms linear;
+    /* Chrome, Safari, Opera */
     animation: dropDownIn 250ms linear;
 }
+
 .in.out {
     -webkit-animation: dropDownUp 250ms linear;
     animation: dropDownUp 250ms linear;
     height: 0 !important;
 }
+
 @-webkit-keyframes dropDownUp {
-    from {height: 205px; display: block;}
-    to {height: -205px; display: none;}
+    from {
+        height: 205px;
+        display: block;
+    }
+    to {
+        height: -205px;
+        display: none;
+    }
 }
 
+
 /* Standard syntax */
+
 @keyframes dropDownUp {
-    from {height: 205px; display: block;}
-    to {height: -205px; display: none;}
-}
-@-webkit-keyframes dropDownIn {
-    from {height: 0;}
-    to {height: 205px;}
+    from {
+        height: 205px;
+        display: block;
+    }
+    to {
+        height: -205px;
+        display: none;
+    }
 }
 
-/* Standard syntax */
-@keyframes dropDownIn {
-    from {height: 0;}
-    to {height: 205px;}
+@-webkit-keyframes dropDownIn {
+    from {
+        height: 0;
+    }
+    to {
+        height: 205px;
+    }
 }
+
+
+/* Standard syntax */
+
+@keyframes dropDownIn {
+    from {
+        height: 0;
+    }
+    to {
+        height: 205px;
+    }
+}
+
+
 /*----- End Responsive Menu -------*/
-a:active, a:hover {
+
+a:active,
+a:hover {
     outline: 0;
 }
+
 .activeLang {
     text-decoration: underline;
 }
+
 .hidden-m {
     display: none;
 }
+
 .showed-m {
     display: block;
 }
+
 .text-only {
     width: 75%;
     margin: auto;
     margin-bottom: 20px;
 }
+
 .box-text {
     width: 80%;
     margin: auto;
 }
+
+
 /* --------- Specific Styles ---------*/
-.padding-l {
+
+.padding-l--0 {
     padding-left: 0 !important;
 }
-.padding-r {
+
+.padding-r--0 {
     padding-right: 0 !important;
 }
-.min-height-container {
 
-}
+
 /* --------- End Specific Styles ---------*/
+
+
+/* --------- Pages ---------*/
+
+.img-text-pages {
+    width: 300px;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+
+/* --------- End Pages ---------*/
