@@ -13,7 +13,7 @@ body {
 }
 
 #body-wrapper {
-    padding-bottom: 150px;
+    padding-bottom: 160px;
 }
 
 h1 {
@@ -225,11 +225,17 @@ nav a.active {
     bottom: 0;
     color: #fff;
     font-size: 11px;
-    height: 130px;
+    height: 140px;
     position: absolute;
     width: 100%;
 }
-
+.footer address-component:nth-child(1) i {
+    margin-right: 5px;
+}
+.footer address-component:nth-child(2) i {
+    float: right;
+    margin-left: 5px;
+}
 .footer h3 {
     font-size: 15px;
 }
@@ -463,10 +469,10 @@ nav a.active {
 }
 @media screen and (max-width: 542px) {
     .footer {
-        height: 240px !important;
+        height: 250px !important;
     }
     #body-wrapper {
-        padding-bottom: 240px;
+        padding-bottom: 250px;
     }
     .footer div {
         width: 100%;
