@@ -549,7 +549,7 @@ export class InMemoryDataService implements InMemoryDbService {
             {
                 divClass: 'col-lg-3 col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-r-scmin-640 text-right',
                 header: 'Gibraltar',
-                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
+                subHeader: '5.2 Waterport Place',
                 email: 'cmarquez@gibraltar-sbd.com',
                 phone: '+51-95-510-9774',
                 mobile: '+51-997-428-789',
@@ -571,7 +571,7 @@ export class InMemoryDataService implements InMemoryDbService {
             {
                 divClass: 'col-lg-6 col-md-6',
                 header: 'Gibraltar',
-                subHeader: 'Las Castañitas 138, San Isidro (Lima 27) Street',
+                subHeader: '5.2 Waterport Place',
                 email: 'cmarquez@gibraltar-sbd.com',
                 phone: '+51-95-510-9774',
                 mobile: '+51-997-428-789',
