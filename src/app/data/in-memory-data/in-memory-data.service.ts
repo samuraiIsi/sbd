@@ -113,14 +113,14 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'michael', 
                 title: 'Honourable Michael A. Feetham',
                 subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                image: '../../theme/assets/img/michael_263x452.jpg',
                 text: "Michael Feetham was a former Minister for Trade and Industry in Gibraltar 1988-1996 responsible for economic development. He chaired the committee that drew up the original legislation for the introduction of Financial Services Legislation and the Financial Services Commission both prerequisite to the modernisation and regulation of the present Gibraltar Finance Centre. During his time in Government he had responsibility for overseeing the largest infrastructural and land reclamation programme in the history of Gibraltar's self government.\nSince then he has worked in the private sector as an independent consultant.\nHe has also occupied various directorships with leading international firms.Michael Feetham first became attracted by Peru its history, culture and people nearly 5 years ago. Following a number of visits he finally decided to form a company in the capital Lima to help attract investors to the country."
             },
             {
                 id: 'carlos', 
                 title: 'Lawyer Carlos D. Márquez',
                 subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/carlos_263x452.jpg',
                 text: "Carlos D. Márquez (1976, Lima-Perú) Lawyer, Member of the  Illustrious College of Lima (2004). Degree in law from the Faculty of law University of San Martín de Porres (2000). Master's degree in Company law Pontifical Catholic University of Peru (2009). Specialist in Business law, Civil law and Investment. In 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru.\nHe is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies. Company advisor and consultant to Gibraltar SBD-SAC."
             }
         ];
@@ -128,14 +128,14 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'michael', 
                 title: 'Honorable Michael A. Feetham',
                 subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                image: '../../theme/assets/img/michael_263x452.jpg',
                 text: "Michael Feetham es un ex Ministro de Comercio e Industria en Gibraltar 1988-1996 responsable para el desarrollo económico. Él presidió el comité que redactó la legislación original para la introducción de Servicios Financieros Legislación y la Comisión de Servicios Financieros, tanto pre-requisito para la modernización y la regulación de la presente Finance Centre Gibraltar. Durante su tiempo en el Gobierno tenía la responsabilidad de supervisar el programa de recuperación de infraestructura y la tierra más grande en la historia del auto gobierno de Gibraltar.\nDesde entonces, ha trabajado en el sector privado como consultor independiente. También ha ocupado diversos cargos directivos con las principales firmas internacionales. Michael Feetham primero se sintió atraído por el Perú de su historia, la cultura y la gente hace casi 5 años. Tras una serie de visitas que finalmente decidió formar una compañía en la capital Lima para ayudar a atraer inversionistas al país."
             },
             {
                 id: 'carlos', 
                 title: 'Lawyer Carlos D. Márquez',
                 subTitle: 'Owner- Director',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/carlos_263x452.jpg',
                 text: "Abogado  Miembro del Ilustre Colegio de Abogados de Lima (2004). Licenciado en Derecho de la Facultad de Derecho de la Universidad de San Martín de Porres (2000). Maestría en Derecho de la Empresa en la Pontificia Universidad Católica del Perú (2009). Especialista en Derecho Empresarial, Derecho Civil e Inversiones. Desde el 2005 es propietario de la firma Carlos D. Márquez - Abogados SAC, empresa asesora y consultora de Gibraltar SBD. En el año 2008 funda el despacho Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, empresa que reúne a un grupo de profesionales abogados en ejercicio, graduados y con estudios de postgrado en las más prestigiosas facultades de derecho del Perú.\nActualmente es asesor principal de empresas nacionales e internacionales en el rubro del derecho de la empresa, derecho administrativo, contrataciones y adquisiciones, asociaciones público privadas y promoción de inversiones extranjeras.",
                 lang: 'en'
             }
@@ -264,7 +264,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 classDiv: 'col-lg-6 col-md-6',
                 articleClass: 'boxes col-lg-6 col-lg-offset-3 bg-border-img',
                 headerText: '',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                image: '../../theme/assets/img/michael_263x452.jpg',
                 imageClass: '', 
                 name: 'Michael A. Feetham',
                 prof: 'Owner-Director',
@@ -283,7 +283,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 classDiv: 'col-lg-6 col-md-6',
                 articleClass: 'boxes col-lg-6 col-lg-offset-3',
                 headerText: '',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/carlos_263x452.jpg',
                 imageClass: '',
                 name: 'Carlos D. Márquez',
                 prof: 'Owner-Director',
@@ -299,7 +299,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 classDiv: 'col-lg-6 col-md-6',
                 articleClass: 'boxes col-lg-6 col-lg-offset-3 bg-border-img',
                 headerText: '',
-                image: '../../theme/assets/img/LRA-295-263x452.jpg',
+                image: '../../theme/assets/img/michael_263x452.jpg',
                 imageClass: '', 
                 name: 'Michael A. Feetham',
                 prof: 'Socio-Director',
@@ -314,7 +314,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 classDiv: 'col-lg-6 col-md-6',
                 articleClass: 'boxes col-lg-6 col-lg-offset-3',
                 headerText: '',
-                image: '../../theme/assets/img/LRA-448-263x452.jpg',
+                image: '../../theme/assets/img/carlos_263x452.jpg',
                 imageClass: '',
                 name: 'Carlos D. Márquez',
                 prof: 'Socio-Director',
