@@ -13,7 +13,7 @@ export class ContactService {
 	constructor(private http: Http) { }
 
 	getAddress(): Promise<Address[]> {
-		var path = window.location.pathname;
+		var path = window.location.hash;
 		var cond = false;
 		path.indexOf('es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.contactHomeESUrl}` : `${this.contactENUrl}`;

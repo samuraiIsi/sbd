@@ -17,10 +17,11 @@ export class AboutService {
 	constructor(private http: Http) { }
 
 	getAboutText(): Promise<TextOnly[]> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.aboutTextESUrl}` : `${this.aboutTextENUrl}`;
+
 		return this.http.get(url)
 	       .toPromise()
 	       .then(response => response.json().data as TextOnly[])
@@ -35,7 +36,7 @@ export class AboutService {
 	}
 
 	getDetails(id: string): Promise<Details> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.detailsESUrl}/${id}` : `${this.detailsENUrl}/${id}`;

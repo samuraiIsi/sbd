@@ -11,45 +11,51 @@ import { AssociatesDetailComponent }   from '../app/shared/associates-details/as
 import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peru-gibraltar.page';
 import { Injectable }                  from '@angular/core';
 
-let navMenuEN = ["/home", "/about", "/associates", "/agencies", "/perugibraltar", "/contact"];
-let navMenuES = ["/es/inicio", "/es/nosotros", "/es/asociados", "/es/agencias", "/es/perugibraltar", "/es/contacto"];
 
-var path = window.location.pathname;
-var cond = false;
-    (path.indexOf('/es') != -1) ? cond = false : cond = true;
-    let urlHome = cond ? 'home' : 'es/inicio';
-    let urlAbout = cond ? 'about' : 'es/nosotros';
-    let urlAgencies = cond ? 'agencies' : 'es/agencias';
-    let urlAssociates = cond ? 'associates' : 'es/asociados';
-    let urlPerugibraltar = cond ? 'perugibraltar' : 'es/perugibraltar';
-    let urlContact = cond ? 'contact' : 'es/contacto';
+let navMenuEN = ["#/home", "#/about", "#/associates", "#/agencies", "#/perugibraltar", "#/contact"];
+let navMenuES = ["#/es/inicio", "#/es/nosotros", "#/es/asociados", "#/es/agencias", "#/es/perugibraltar", "#/es/contacto"];
 
 const routes: Routes = [
-  { path: '', redirectTo: urlHome, pathMatch: 'full' },
-  { path: urlHome,  component: HomePage },
-  { path: urlAbout + '/:id', component: AboutDetailComponent },
-  { path: urlAbout, component: AboutPage },
-  { path: urlAgencies + '/:id', component: AgenciesDetailComponent },
-  { path: urlAgencies, component: AgenciesPage },
-  { path: urlAssociates + '/:id', component: AssociatesDetailComponent },
-  { path: urlAssociates, component: AssociatesPage },
-  { path: urlPerugibraltar, component: PeruGibraltarPage },
-  { path: urlContact, component: ContactPage }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'es/inicio', pathMatch: 'full' },
+  { path: 'home',  component: HomePage },
+  { path: 'es/inicio',  component: HomePage },
+  { path: 'about' + '/:id', component: AboutDetailComponent },
+  { path: 'about', component: AboutPage },
+  { path: 'es/nosotros' + '/:id', component: AboutDetailComponent },
+  { path: 'es/nosotros', component: AboutPage },
+  { path: 'agencies' + '/:id', component: AgenciesDetailComponent },
+  { path: 'agencies', component: AgenciesPage },
+  { path: 'es/agencias' + '/:id', component: AgenciesDetailComponent },
+  { path: 'es/agencias', component: AgenciesPage },
+  { path: 'associates' + '/:id', component: AssociatesDetailComponent },
+  { path: 'associates', component: AssociatesPage },
+  { path: 'es/asociados' + '/:id', component: AssociatesDetailComponent },
+  { path: 'es/asociados', component: AssociatesPage },
+  { path: 'perugibraltar', component: PeruGibraltarPage },
+  { path: 'es/perugibraltar', component: PeruGibraltarPage },
+  { path: 'contact', component: ContactPage },
+  { path: 'es/contacto', component: ContactPage }
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
   exports: [ RouterModule ]
 })
 
 @Injectable()
 export class AppRoutingModule {
     changeSpanish(): void{
+        var ENClass: string;
+        var ESClass: string;
         var path_string: string;
         var text: string;
         var mainpath: string;
+        var mainpath: string;
         var addedPath: string;
-        var path = window.location.pathname;
+
+        var path = window.location.hash;
+
         var pathS = path.split("/");
         var pathES = pathS.indexOf('es'); 
         if(pathES != -1 && pathS.length > 3) {
@@ -76,11 +82,12 @@ export class AppRoutingModule {
                     path_string = "home";
             }
         if(pathES !== -1 && pathS.length > 3) {
-            window.location.pathname =  mainpath.replace(mainpath, path_string + addedPath);
+            window.location.hash =  mainpath.replace(mainpath, path_string + addedPath);
         } else if(pathES == -1 && pathS.length > 2) {
-            window.location.pathname =  mainpath.replace(mainpath, path_string + addedPath);
+            window.location.hash =  mainpath.replace(mainpath, path_string + addedPath);
         } else {
-            window.location.pathname =  mainpath.replace(mainpath, path_string);
+            window.location.hash =  mainpath.replace(mainpath, path_string);
         }
+        location.reload();
     }
 }

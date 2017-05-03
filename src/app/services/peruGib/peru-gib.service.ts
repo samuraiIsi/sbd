@@ -14,7 +14,7 @@ export class PeruGibService {
 	constructor(private http: Http) { }
 
 	getInfo(): Promise<Accordion[]> {
-		var path = window.location.pathname;
+		var path = window.location.hash;
 		var cond = false;
 		path.indexOf('es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.perugibESUrl}` : `${this.perugibENUrl}`;

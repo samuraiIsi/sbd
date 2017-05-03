@@ -4,13 +4,6 @@ import { Trans }                from './types/trans/trans'
 import { HomeService }          from './services/homeService/home.service';
 import { AppRoutingModule }     from '../app/app-routing.module'
 
-export class Hero {
-  value: string;
-}
-const HEROES: Hero[] = [
-  { value: 'EN'},
-  { value: 'ES'}
-];
 @Component({
   selector: 'header-app',
   template: `
@@ -48,11 +41,9 @@ const HEROES: Hero[] = [
 
 export class AppComponent implements OnInit {
     private btnMenuClass: string;
-    private checking: boolean;
     private collapseIn: string;
     private ENClass: string;
     private ESClass: string;
-    private isActive?: boolean;
 
     tr: Trans; 
    
@@ -71,7 +62,7 @@ export class AppComponent implements OnInit {
     }
 
     statusLang(): void {
-        var path = window.location.pathname.split("/");
+        var path = window.location.hash.split("/");
         var index = path.indexOf('es');
         if(index > -1) {
             this.ESClass = 'hidden-m';

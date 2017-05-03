@@ -13,7 +13,7 @@ export class BoxesService {
 	constructor(private http: Http) { }
 
 	getBoxes(): Promise<Boxes[]> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		(x.indexOf('es') != -1) ? y = true : y = false;
 		const url = y ? `${this.boxesESUrl}` : `${this.boxesENUrl}`;

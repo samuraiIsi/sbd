@@ -15,7 +15,7 @@ export class AgenciesService {
 	constructor(private http: Http) { }
 
 	getBoxesPanel(): Promise<BoxesPanels[]> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.agenciesESUrl}` : `${this.agenciesENUrl}`;
@@ -25,7 +25,7 @@ export class AgenciesService {
 	       .catch(this.handleError);
 	}
 	getHero(id: string): Promise<BoxesPanels> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		(x.indexOf('/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.agenciesInfoESUrl}/${id}` : `${this.agenciesInfoENUrl}/${id}`;

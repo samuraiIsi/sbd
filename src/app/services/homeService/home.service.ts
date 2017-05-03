@@ -19,9 +19,9 @@ export class HomeService {
 	constructor(private http: Http) { }
 
 	getCarousel(): Promise<Carousel[]> {
-		var path = window.location.pathname;
+		var path = window.location.hash;
 		var cond = false;
-		path.indexOf('es') != -1 ? cond = true : cond = false;
+		path.indexOf('#/es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.carouselHomeESUrl}` : `${this.carouselHomeUrl}`;
 		return this.http.get(url)
 	       .toPromise()
@@ -30,9 +30,9 @@ export class HomeService {
 	}
 
 	getHomeBoxes(): Promise<Boxes[]> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
-		(x.indexOf('/es') != -1) ? y = true : y = false;
+		(x.indexOf('#/es') != -1) ? y = true : y = false;
 		const url = y ? `${this.homeBoxesESUrl}` : `${this.homeBoxesENUrl}`;
 		return this.http.get(url)
 	       .toPromise()
@@ -55,9 +55,9 @@ export class HomeService {
 	}
 
 	getNavMenu(): Promise<Trans> {
-		var path = window.location.pathname;
+		var path = window.location.hash;
 		var cond = false;
-		path.indexOf('/es') != -1 ? cond = true : cond = false;
+		path.indexOf('#/es') != -1 ? cond = true : cond = false;
 		const url = cond ? `${this.navMenuESUrl}` : `${this.navMenuENUrl}`;
 		return this.http.get(url)
 	       .toPromise()

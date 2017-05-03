@@ -13,7 +13,7 @@ export class AssociatesService {
 	constructor(private http: Http) { }
 
 	getHero(id: string): Promise<BoxesPanels> {
-		var x = window.location.pathname;
+		var x = window.location.hash;
 		var y = false;
 		let response: string 
 		(x.indexOf('/es') != -1) ? y = true : y = false;
