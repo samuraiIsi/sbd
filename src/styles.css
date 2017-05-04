@@ -239,12 +239,8 @@ nav a.active {
     position: absolute;
     width: 100%;
 }
-.footer address-component:nth-child(1) i {
+.footer address-component i {
     margin-right: 5px;
-}
-.footer address-component:nth-child(2) i {
-    float: right;
-    margin-left: 5px;
 }
 .footer h3 {
     font-size: 15px;
@@ -417,7 +413,13 @@ nav a.active {
 .carousel-caption-m p {
     line-height: 1;
 }
-
+@media screen and (min-width: 543px) {
+    .footer address-component:nth-child(2) i {
+        float: right;
+        margin-left: 5px;
+        margin-right: 0;
+    }
+}
 @media screen and (min-width: 769px) {
     .slider,
     .slider li img {
