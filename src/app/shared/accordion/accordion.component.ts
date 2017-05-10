@@ -12,7 +12,12 @@ import { Accordion }          from '../../types/accordion/accordion';
 export class AccordionComponent {
     @Input() acc: Accordion;
     showAcc = true;
-    showAccordion(showAcc: any) {
+    changeClass = 'fa fa-chevron-down pull-right';
+    showAccordion(showAcc: any, changeClass: string) {
     	showAcc == false ? this.showAcc = true : this.showAcc = false;
+    	changeClass == 'fa fa-chevron-down pull-right' ? 
+    			this.changeClass = 'fa fa-chevron-up pull-right' 
+    				: 
+    			this.changeClass = 'fa fa-chevron-down pull-right';
     }
 }

@@ -2,8 +2,8 @@
     <div *ngIf="boxesPanels">
         <h2 class="fs24--xs">{{boxesPanels.title}}</h2>
         <p>{{boxesPanels.subTitle}}</p>
-        <img [src]="boxesPanels.image" class="img-text-pages">
+        <img [src]="boxesPanels.image" [class]="boxesPanels.imageClass">
         <p class="fs20--md fs13--xs col-lg-8 padding-l--0 fs20 angular-with-newlines">{{boxesPanels.text}}</p>
-        <button (click)="goBack()" class="col-xs-1 pull-right">Back</button>
+        <button (click)="goBack()" class="btn--small pull-right">Back</button>
     </div>
 </div>

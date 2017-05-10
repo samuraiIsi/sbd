@@ -179,7 +179,8 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'spain', 
                 title: 'JUAN CARMONA CÓZAR',
                 subTitle: 'LAWYER',
-                image: '../../theme/assets/img/gavel_400x300.jpg',
+                image: '../../theme/assets/img/carmona_263x452.jpg',
+                imageClass: 'img-text-about',
                 btnLinkA: 'spain',
                 text: "Juan Carmona Cózar lawyer Degree in Law from the Complutense University of Madrid in 1975.Master School of Legal Practice of the Complutense University of Madrid in 1976. Specializes in advising corporations and companies in their complex relationships and contacts with government, with the activity intended to carry out. These activities are most often urban implications of applying for licenses, environmental, management of cases of expropriation, including disciplinary, involving a large economic impact and, sometimes, delay or stoppage if not faced with knowledge, experience, and discretion.\n\nJuan Carmona Cózar, has been senior executive in local, provincial, and regional government for 12 years, which has allowed him to deeply know the Public Administration from within.\n\n- Mayor of La Línea de la Concepción from 1979-1984 \n- Vice President of the Provincial Council of Cadiz 1979-1983\n- Provincial Delegate of Finance of Cadiz in 1984-1986.\n- Director General of Budgets of the Junta de Andalucía (Regional Government) of 1986-1991.\n\nHe has also worked with all the major utilities and energy sector, implementation of power plant projects, both producing renewable wind energy as gas combined cycles. (Endesa, Iberdrola, Union Fenosa, Cepsa, Elecnor, Gamesa, etc. ... ..)\nHe has also participated and contributed as an expert on public projects that require specialized advice to the administration, in its relationship with businesses and citizens.  In that sense he is a specialist in Law of Public Administration and Urban Development, which has allowed municipalities and corporations have their counselling efforts leading to successfully negotiating complex projects such as: Management Plans, records of expropriation, relocation of populations , ...... etc."
             },
@@ -188,6 +189,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'COMPANY CONSULTANTS',
                 subTitle: 'Antonio Carmelino & Carlos D. Marquez Moran',
                 image: '../../theme/assets/img/laurel-balance-peru-flag.jpg',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'peru',
                 text: "Antonio Carmelino\nAdvocate, studies to date culminated in the Master of Laws in Business Law from the Pontifical Catholic University of Peru, with experience, capability and extensive knowledge of the legal framework concerning energy (electricity, gas, nuclear), Customs Law (Customs Agent), Agro-export, legal regime Investment Promotion and Negotiation Techniques. He has served for over 20 years in Managerial level positions in those specialties and nine years as Managing Director and / or legal advisor for companies and organizations linked to energy sector.\n\nCarlos D. Marquez Moran\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru. He is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies"
             },
@@ -196,6 +198,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Hassans',
                 subTitle: 'COMPANY SOLICITORS',
                 image: '../../theme/assets/img/hassans_400x300.png',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'europe',
                 text: "Hassans was established in 1939 by Sir Joshua Hassan working from one room in Horse Barrack Lane, Gibraltar.\n\nSir Joshua trained as a lawyer at Middle Temple and was called to the Bar of England and Wales in 1939. When World War II broke out, he volunteered as a gunner in the Gibraltar Defence Force and remained in the then colony when most of Gibraltar’s civilian population had been evacuated and only a small number of Gibraltarians remained on The Rock. He was nicknamed “Salvador” (Saviour), was a Gibraltarian politician, and first Mayor and Chief Minister of Gibraltar, serving four terms as Chief Minister for a total of 17 years. He is seen as the key figure in the civil rights movement in Gibraltar, and played a key role in the creation of the territory’s institutions of self-government.\n\nSir Joshua passed away in 1997. According to Peter Caruana, Chief Minister of Gibraltar at the time of Hassan’s death, “No one has done more to establish and promote the identity and maintain the rights of the people of Gibraltar.” In that year, James Levy took on the leadership  of the firm as Senior Partner. He was awarded CBE in 2014 for his services to the community and has grown the firm to 36 partners and over 200 staff today.\nHassans is both the largest firm in Gibraltar and the leading firm, as cited by the industries’ leading directories, Chambers and Partners and Legal 500."
             },
@@ -204,6 +207,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Yakovlev & Partners',
                 subTitle: 'ASSOCIATES',
                 image: '../../theme/assets/img/yakolev_400x300.png',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'russia',
                 text: "The Law Group “Yakovlev & Partners” was one of the fist private law firms in Russia, which came into being in 1990 by establishing a Limited Liability Company “MaTEC”(Marketing, Trading, Engineering and Consulting small business), which was organized by a group of lawyers with the great experience of work at the government institutions.\n\nIn 1995 the company was renamed as ООО “MaTEC. Yakovlev & Partners” (LLC), with the new area of its activities: rendering legal support to business not only in Russia, but also abroad.\n\nIn 2003 the Moscow Collegium of Advocates” was set up on the basis of the law firm. It allowed to highlight two main lines of the company’s activities: the Collegium attorneys-at-law mainly work in courts, and employees of the firm “MaTEC. Yakovlev & Partners” provide legal advise to clients.\n\nOver a period of 20 years the Law Group “Yakovlev & Partners” is one of the leaders in the sphere of business legal support in Russia"
             },
@@ -212,6 +216,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Paulo Costa',
                 subTitle: 'LEGAL REPRESENTATIVE',
                 image: '../../theme/assets/img/angola_400x300.jpg',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'angola',
                 text: "It needs text"
             }
@@ -222,7 +227,8 @@ export class InMemoryDataService implements InMemoryDbService {
                 id: 'spain', 
                 title: 'JUAN CARMELINO',
                 subTitle: 'LAWYER',
-                image: '../../theme/assets/img/gavel_400x300.jpg',
+                image: '../../theme/assets/img/carmona_263x452.jpg',
+                imageClass: 'img-text-about',
                 btnLinkA: 'spain',
                 text: "Juan Carmona de Cózar. Abogado Licenciado en Derecho por la Universidad Complutense de Madrid en 1975.Master en la Escuela de Práctica Jurídica de la Universidad Complutense de Madrid en 1976.\nJuan Carmona de Cózar,  es especialista en el asesoramiento a Corporaciones y empresas en sus complejas relaciones y contactos con las Administraciones Públicas, respecto de la actividad que pretenden llevar a cabo. Dichas actividades tienen la mayoría de las veces implicaciones urbanísticas de solicitud de licencias, medioambientales, de tramitación de expedientes de expropiación, incluso sancionadores, que conllevan una gran repercusión económica y, en algunas ocasiones, de retraso o incluso paralización de la actividad si no se encaran con conocimiento, experiencia, y discreción.\n\nEn este sentido, Juan Carmona de Cózar, ha sido alto directivo en las Administraciones Públicas local, provincial, y regional, durante 12 años,  lo que le ha permitido conocer profundamente la Administración Pública desde dentro.\n\n- Alcalde de La Línea de la Concepción de 1979 a 1984\n- Vicepresidente de la Diputación Provincial de Cádiz de 1979 a 1983.\n- Delegado Provincial de Hacienda de Cádiz de 1984 a 1986.\n- Director General de Presupuestos de la Junta de Andalucía (Gobierno Regional) de 1986 a 1991.\n\nTambién ha trabajado con todas las grandes compañías eléctricas y del sector de la energía, en implantación de proyectos de centrales eléctricas, tanto de producción de energía renovable eólica, como de gas en ciclos combinados. (Endesa, Iberdrola, Unión Fenosa, Cepsa, Elecnor, Gamesa, etc.….\nTambién ha participado y contribuido, como experto, en proyectos públicos que requieren un asesoramiento especializado a la propia Administración, en su relación con las empresas y los ciudadanos.\nEn ese sentido es especialista en Derecho de las Administraciones Públicas y Urbanismo, lo cual ha permitido a Ayuntamientos y Corporaciones contar con su asesoramiento para gestiones y negociar con éxito proyectos muy complejos, tales como: Planes de Ordenación, expedientes de expropiación, realojo de poblaciones, etc.……"
             },
@@ -231,6 +237,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'CONSULTORES',
                 subTitle: 'Antonio Carmelino & Carlos D. Marquez Moran',
                 image: '../../theme/assets/img/laurel-balance-peru-flag.jpg',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'peru',
                 text: "Antonio Carmelino\nAbogado, a la fecha con estudios culminados en la  Maestría de Derecho con mención en Derecho de la Empresa de la Pontificia Universidad Católica del Perú, con experiencia, capacitación y amplio conocimiento del marco legal energético (electricidad, gas, energía nuclear), Derecho Aduanero (Agente de Aduana), Agro-exportación, régimen legal de Promoción de la Inversión  y Técnicas de Negociación. Se ha desempeñado por más de 20 años en puestos de nivel Gerencial en las citadas especialidades y los últimos nueve años como Gerente, Director y/o Asesor Legal en empresas y entidades vinculadas al sector energía.\n\nCarlos D. Marquez Moran\nEn 2008 fundó la empresa de Carlos D. Márquez - Abogados Sociedad Anónima Cerrada, una empresa que reúne a un grupo de abogados profesionales, con estudios de grado y de postgrado en las facultades de derecho más prestigiosas de Perú. En la actualidad es asesor principal para las empresas nacionales e internacionales en el área de derecho mercantil, derecho administrativo, contratos y adquisiciones, asociaciones público-privadas y la promoción de la inversión extranjera."
             },
@@ -239,6 +246,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Hassans',
                 subTitle: 'BUFETE DE ABOGADOS',
                 image: '../../theme/assets/img/hassans_400x300.png',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'europe',
                 text: "<b>Traducirlo a español</b>."
             },
@@ -247,6 +255,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Yakovlev & Partners',
                 subTitle: 'ASSOCIADOS',
                 image: '../../theme/assets/img/yakolev_400x300.png',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'russia',
                 text: "Después de más de veinte años de estar en el negocio jurídico 'Yakovlev & Partners' ® se ha convertido en una de las firmas legales líderes en Rusia, con más de 75 abogados ..."
             },
@@ -255,6 +264,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 title: 'Paulo Costa',
                 subTitle: 'REPRESENTANTE LEGAL',
                 image: '../../theme/assets/img/angola_400x300.jpg',
+                imageClass: 'img-text-pages',
                 btnLinkA: 'angola',
                 text: "Necesita texto"
             }

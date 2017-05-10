@@ -6,4 +6,5 @@ export class Accordion {
 	info: Object;
 	image?: string;
 	showAcc: Boolean;
+	changeClass: string;
 }
