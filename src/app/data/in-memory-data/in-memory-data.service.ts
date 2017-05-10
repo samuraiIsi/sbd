@@ -176,7 +176,7 @@ export class InMemoryDataService implements InMemoryDbService {
         ];
         let associatesEN = [
             {
-                id: 'spain', 
+                id: 'juan_carmona', 
                 title: 'JUAN CARMONA CÓZAR',
                 subTitle: 'LAWYER',
                 image: '../../theme/assets/img/carmona_263x452.jpg',
@@ -194,21 +194,21 @@ export class InMemoryDataService implements InMemoryDbService {
                 text: "Antonio Carmelino\nAdvocate, studies to date culminated in the Master of Laws in Business Law from the Pontifical Catholic University of Peru, with experience, capability and extensive knowledge of the legal framework concerning energy (electricity, gas, nuclear), Customs Law (Customs Agent), Agro-export, legal regime Investment Promotion and Negotiation Techniques. He has served for over 20 years in Managerial level positions in those specialties and nine years as Managing Director and / or legal advisor for companies and organizations linked to energy sector.\n\nCarlos D. Marquez Moran\nIn 2008 he founded the firm Carlos D. Márquez – Abogados Sociedad Anónima Cerrada, a company that brings together a group of professional lawyers,  with graduate and postgraduate studies at the most prestigious law schools in Peru. He is currently a senior advisor for national and international in the area of business law, administrative law, contracts and procurement, public private partnerships and promoting foreign investment companies"
             },
             {
-                id: 'europe', 
+                id: 'hassans', 
                 title: 'Hassans',
                 subTitle: 'COMPANY SOLICITORS',
                 image: '../../theme/assets/img/hassans_400x300.png',
                 imageClass: 'img-text-pages',
-                btnLinkA: 'europe',
+                btnLinkA: 'hassans',
                 text: "Hassans was established in 1939 by Sir Joshua Hassan working from one room in Horse Barrack Lane, Gibraltar.\n\nSir Joshua trained as a lawyer at Middle Temple and was called to the Bar of England and Wales in 1939. When World War II broke out, he volunteered as a gunner in the Gibraltar Defence Force and remained in the then colony when most of Gibraltar’s civilian population had been evacuated and only a small number of Gibraltarians remained on The Rock. He was nicknamed “Salvador” (Saviour), was a Gibraltarian politician, and first Mayor and Chief Minister of Gibraltar, serving four terms as Chief Minister for a total of 17 years. He is seen as the key figure in the civil rights movement in Gibraltar, and played a key role in the creation of the territory’s institutions of self-government.\n\nSir Joshua passed away in 1997. According to Peter Caruana, Chief Minister of Gibraltar at the time of Hassan’s death, “No one has done more to establish and promote the identity and maintain the rights of the people of Gibraltar.” In that year, James Levy took on the leadership  of the firm as Senior Partner. He was awarded CBE in 2014 for his services to the community and has grown the firm to 36 partners and over 200 staff today.\nHassans is both the largest firm in Gibraltar and the leading firm, as cited by the industries’ leading directories, Chambers and Partners and Legal 500."
             },
             {
-                id: 'russia', 
+                id: 'yakolev_partners', 
                 title: 'Yakovlev & Partners',
                 subTitle: 'ASSOCIATES',
                 image: '../../theme/assets/img/yakolev_400x300.png',
                 imageClass: 'img-text-pages',
-                btnLinkA: 'russia',
+                btnLinkA: 'yakolev_partners',
                 text: "The Law Group “Yakovlev & Partners” was one of the fist private law firms in Russia, which came into being in 1990 by establishing a Limited Liability Company “MaTEC”(Marketing, Trading, Engineering and Consulting small business), which was organized by a group of lawyers with the great experience of work at the government institutions.\n\nIn 1995 the company was renamed as ООО “MaTEC. Yakovlev & Partners” (LLC), with the new area of its activities: rendering legal support to business not only in Russia, but also abroad.\n\nIn 2003 the Moscow Collegium of Advocates” was set up on the basis of the law firm. It allowed to highlight two main lines of the company’s activities: the Collegium attorneys-at-law mainly work in courts, and employees of the firm “MaTEC. Yakovlev & Partners” provide legal advise to clients.\n\nOver a period of 20 years the Law Group “Yakovlev & Partners” is one of the leaders in the sphere of business legal support in Russia"
             },
             {
@@ -224,8 +224,8 @@ export class InMemoryDataService implements InMemoryDbService {
         ];
         let associatesES = [
             {
-                id: 'spain', 
-                title: 'JUAN CARMELINO',
+                id: 'juan_carmona', 
+                title: 'JUAN CARMONA',
                 subTitle: 'LAWYER',
                 image: '../../theme/assets/img/carmona_263x452.jpg',
                 imageClass: 'img-text-about',
@@ -242,21 +242,21 @@ export class InMemoryDataService implements InMemoryDbService {
                 text: "Antonio Carmelino\nAbogado, a la fecha con estudios culminados en la  Maestría de Derecho con mención en Derecho de la Empresa de la Pontificia Universidad Católica del Perú, con experiencia, capacitación y amplio conocimiento del marco legal energético (electricidad, gas, energía nuclear), Derecho Aduanero (Agente de Aduana), Agro-exportación, régimen legal de Promoción de la Inversión  y Técnicas de Negociación. Se ha desempeñado por más de 20 años en puestos de nivel Gerencial en las citadas especialidades y los últimos nueve años como Gerente, Director y/o Asesor Legal en empresas y entidades vinculadas al sector energía.\n\nCarlos D. Marquez Moran\nEn 2008 fundó la empresa de Carlos D. Márquez - Abogados Sociedad Anónima Cerrada, una empresa que reúne a un grupo de abogados profesionales, con estudios de grado y de postgrado en las facultades de derecho más prestigiosas de Perú. En la actualidad es asesor principal para las empresas nacionales e internacionales en el área de derecho mercantil, derecho administrativo, contratos y adquisiciones, asociaciones público-privadas y la promoción de la inversión extranjera."
             },
             {
-                id: 'europe', 
+                id: 'hassans', 
                 title: 'Hassans',
                 subTitle: 'BUFETE DE ABOGADOS',
                 image: '../../theme/assets/img/hassans_400x300.png',
                 imageClass: 'img-text-pages',
-                btnLinkA: 'europe',
+                btnLinkA: 'hassans',
                 text: "<b>Traducirlo a español</b>."
             },
             {
-                id: 'russia', 
+                id: 'yakolev_partners', 
                 title: 'Yakovlev & Partners',
                 subTitle: 'ASSOCIADOS',
                 image: '../../theme/assets/img/yakolev_400x300.png',
                 imageClass: 'img-text-pages',
-                btnLinkA: 'russia',
+                btnLinkA: 'yakolev_partners',
                 text: "Después de más de veinte años de estar en el negocio jurídico 'Yakovlev & Partners' ® se ha convertido en una de las firmas legales líderes en Rusia, con más de 75 abogados ..."
             },
             {
@@ -342,7 +342,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'spain',
                 image: '../../theme/assets/img/gavel_400x300.jpg',
                 imageClass: 'img-responsive',
-                btnLink: 'spain',
+                btnLink: 'juan_carmona',
                 footerText: 'COMPANY ADVISER'
             },
             {
@@ -360,7 +360,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'europe',
                 image: '../../theme/assets/img/hassans_400x300.png',
                 imageClass: 'img-responsive',
-                btnLink: 'europe',
+                btnLink: 'hassans',
                 footerText: "COMPANY SOLICITORS"
             },
             {
@@ -369,7 +369,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'russia',
                 image: '../../theme/assets/img/yakolev_400x300.png',
                 imageClass: 'img-responsive',
-                btnLink: 'russia',
+                btnLink: 'yakolev_partners',
                 footerText: 'ASSOCIATES Yakovlev & Partners'
             },
             {
@@ -388,7 +388,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'españa',
                 image: '../../theme/assets/img/gavel_400x300.jpg',
                 imageClass: 'img-responsive',
-                btnLink: 'spain',
+                btnLink: 'juan_carmona',
                 footerText: 'COMPANY ADVISER'
             },
             {
@@ -406,7 +406,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'europa',
                 image: '../../theme/assets/img/hassans_400x300.png',
                 imageClass: 'img-responsive',
-                btnLink: 'europe',
+                btnLink: 'hassans',
                 footerText: "COMPANY SOLICITORS"
             },
             {
@@ -415,7 +415,7 @@ export class InMemoryDataService implements InMemoryDbService {
                 headerText: 'rusia',
                 image: '../../theme/assets/img/yakolev_400x300.png',
                 imageClass: 'img-responsive',
-                btnLink: 'russia',
+                btnLink: 'yakolev_partners',
                 footerText: 'ASSOCIATES Yakovlev & Partners'
             },
             {
