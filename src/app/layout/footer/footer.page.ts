@@ -6,7 +6,7 @@ import { FooterService } from '../../services/footer/footer.service'
 
 @Component({
   selector: 'footer-app',
-  templateUrl: 'app/layout/footer/footer.page.html'
+  templateUrl: './footer.page.html'
 })
 export class AppComponentFooter  { 
 	addes: Address[];

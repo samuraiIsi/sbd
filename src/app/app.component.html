@@ -1,14 +1,15 @@
+<div>
 <header class='header-nav'>
     <div class='pull-left logo-area'>
-        <img src='../../theme/assets/img/logo-header.png' class='pull-left'>
+        <img src='../assets/images/logo_header.png' class='pull-left'>
         <ul class='pull-left'>
             <li class='fs23'>Gibraltar</li>
             <li>Strategic Business Development</li>
         </ul>
     </div>
     <div class="lang-section pull-right">
-        <a type="button" (click)="changeEnglish(this)" [ngClass]="ENClass">EN</a>
-        <a type="button" (click)="changeSpanish(this)" [ngClass]="ESClass">ES</a>
+        <a type="button" (click)="changeSpanishApp()" [ngClass]="ENClass">EN</a>
+        <a type="button" (click)="changeSpanishApp()" [ngClass]="ESClass">ES</a>
     </div>
     <div class="lang-section pull-right">
     </div>
@@ -20,6 +21,11 @@
         </a>
     </div>
     <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
-        <a *ngFor="let nav of tr" routerLink="/{{nav}}" routerLinkActive="active">{{nav | uppercase}}</a>
+        <a href="javascript:void(0);" *ngFor="let nav of tr" routerLink="/{{nav.display}}" routerLinkActive="active">{{nav.value | uppercase}}</a>
     </nav>
 </header>
+<div id="body-wrapper">
+    <router-outlet></router-outlet>
+</div>
+<footer-app></footer-app>
+</div>

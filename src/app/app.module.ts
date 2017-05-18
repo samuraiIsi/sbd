@@ -27,7 +27,7 @@ import { AboutDetailComponent } from '../app/shared/aboutDetails/about-detail.co
 import { AgenciesDetailComponent } from '../app/shared/agencies-details/agencies-details.component';
 import { AssociatesDetailComponent } from '../app/shared/associates-details/associates-detail.component';
 import { TextComponent }        from '../app/shared/textOnly/text-only.component';
-import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peru-gibraltar.page';
+import { PeruGibraltarPage }    from '../app/pages/peru-gibraltar/peruGibraltar.page';
 
 import { Boxes }                from '../app/types/boxes/boxes';
 import { BoxesPanels }          from '../app/types/boxesPanels/boxes-panels';
@@ -86,6 +86,6 @@ import { TranslateService }     from '../app/services/translationService/transla
         PeruGibService,
         TranslateService
     ],
-    bootstrap: [ AppComponent, AppComponentFooter ]
+    bootstrap: [ AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,7 @@ import { BoxesPanels }             from '../../types/boxesPanels/boxes-panels';
 import { AgenciesService }         from '../../services/agenciesService/agencies.service';
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'agencies-page',
     templateUrl: './agencies.page.tpl.html'
 })

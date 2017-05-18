@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { BasicStructurePage }   from '../../types/basicStructurePage/basic-structure-page';
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'basic-structure-page-component',
     templateUrl: './basic-structure-page.component.html'
 })

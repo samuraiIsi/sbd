@@ -7,10 +7,9 @@ import { ContactService } from '../../services/contactService/contact.service';
 declare var google: any;
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'contact-page',
-    templateUrl: './contact.page.html',
-    styleUrls: [ '../../../theme/styles/about.page.css' ]
+    templateUrl: './contact.page.html'
 })
 
 export class ContactPage implements OnInit {

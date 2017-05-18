@@ -4,7 +4,7 @@ import { BoxesPanels }          from '../../types/boxesPanels/boxes-panels';
 import { BoxesPanelService }    from '../../services/boxesPanelService/boxesPanelService.service';
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'associates-page',
     templateUrl: './associates.page.tpl.html'
 })

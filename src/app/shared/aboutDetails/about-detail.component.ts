@@ -10,7 +10,7 @@ import 'rxjs/add/operator/switchMap';
 import { Details } from '../../types/details/details';
 
 @Component({
-  moduleId: module.id,
+  moduleId: 'module.id',
   selector: 'about-detail',
   templateUrl: './about-detail.component.html',
 })

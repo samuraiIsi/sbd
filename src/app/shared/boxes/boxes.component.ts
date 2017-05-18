@@ -4,10 +4,10 @@ import { BoxesPanels }          from '../../types/boxesPanels/boxes-panels';
 
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'boxes-component',
     templateUrl: './boxes.component.html',
-    styleUrls: [ '../../../theme/styles/component/boxes.css' ]
+    styleUrls: [ './boxes.css' ]
 })
 
 export class BoxesComponent {

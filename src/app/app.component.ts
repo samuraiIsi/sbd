@@ -1,42 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+import '../assets/css/styles.css';
 import { Trans }                from './types/trans/trans'
 import { HomeService }          from './services/homeService/home.service';
 import { AppRoutingModule }     from '../app/app-routing.module'
 
+
 @Component({
   selector: 'header-app',
-  template: `
-    <header class='header-nav'>
-        <div class='pull-left logo-area'>
-            <img src='../../theme/assets/img/logo-header.png' class='pull-left'>
-            <ul class='pull-left'>
-                <li class='fs23'>Gibraltar</li>
-                <li>Strategic Business Development</li>
-            </ul>
-        </div>
-         <div class="lang-section pull-right">
-            <a type="button" (click)="changeSpanishApp()" [ngClass]="ENClass">EN</a>
-            <a type="button" (click)="changeSpanishApp()" [ngClass]="ESClass">ES</a>
-         </div>
-        <div class="lang-section pull-right">
-           
-        </div>
-        <div class="container-btn-menu pull-right" [ngClass]="btnMenuClass" (click)="convertBtnMenu(this)">
-            <a href="javascript:void(0);" (click)="dropDownTopMenu()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </a>
-        </div>
-        <nav class="menu nav nav-pills collapse navbar-collapse topnav" [ngClass]="collapseIn">
-            <a *ngFor="let nav of tr" routerLink="/{{nav.display}}" routerLinkActive="active" >{{nav.value | uppercase}}</a>
-        </nav>
-    </header>
-    <div id="body-wrapper">
-        <router-outlet></router-outlet>
-    </div>
-  `
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 
 export class AppComponent implements OnInit {

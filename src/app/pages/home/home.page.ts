@@ -6,10 +6,10 @@ import { HomeService }          from '../../services/homeService/home.service';
 
 
 @Component({
-	moduleId: module.id,
+	moduleId: 'module.id',
 	selector: 'home-page',
 	templateUrl: './home.page.tpl.html',
-	styleUrls: [ '../../../theme/styles/home.page.css' ]
+    styleUrls: [ './home.page.css' ]
 })
 export class HomePage implements OnInit {
     carItem: Carousel[];

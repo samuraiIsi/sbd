@@ -9,7 +9,7 @@ import 'rxjs/add/operator/switchMap';
 import { BoxesPanels } from '../../types/boxesPanels/boxes-panels';
 
 @Component({
-  moduleId: module.id,
+  moduleId: 'module.id',
   selector: 'associates-detail',
   templateUrl: './associates-detail.component.html',
 })

@@ -11,10 +11,10 @@ import 'rxjs/add/operator/distinctUntilChanged';
 import { HeroSearchService }  from '../../../app/services/heroSearchService/hero-search.service';
 import { Details }               from '../../../app/types/details/details';
 @Component({
-  moduleId: module.id,
+  moduleId: 'module.id',
   selector: 'hero-search',
   templateUrl: './hero-search.component.html',
-  styleUrls: [ '../../../theme/styles/hero-search.component.css' ],
+  /*styleUrls: [ '../../../assets/css/hero-search.component.css' ],*/
   providers: [HeroSearchService]
 })
 export class HeroSearchComponent implements OnInit {

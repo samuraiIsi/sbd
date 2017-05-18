@@ -4,9 +4,9 @@ import { Accordion } from '../../types/accordion/accordion';
 import { PeruGibService } from '../../services/peruGib/peru-gib.service';
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'peru-gibraltar-page',
-    templateUrl: './peru-gibraltar.page.html'
+    templateUrl: './peruGibraltar.page.html'
 })
 
 export class PeruGibraltarPage {

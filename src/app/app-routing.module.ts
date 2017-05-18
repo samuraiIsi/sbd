@@ -8,7 +8,7 @@ import { ContactPage }			       from '../app/pages/contact/contact.page';
 import { AboutDetailComponent }        from '../app/shared/aboutDetails/about-detail.component';
 import { AgenciesDetailComponent }     from '../app/shared/agencies-details/agencies-details.component';
 import { AssociatesDetailComponent }   from '../app/shared/associates-details/associates-detail.component';
-import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peru-gibraltar.page';
+import { PeruGibraltarPage }           from '../app/pages/peru-gibraltar/peruGibraltar.page';
 import { Injectable }                  from '@angular/core';
 
 

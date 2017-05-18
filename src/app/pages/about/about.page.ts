@@ -7,9 +7,10 @@ import { BoxesService }         from '../../services/boxesService/boxes.service'
 import { AboutService }         from '../../services/aboutService/about.service';
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'about-page',
-    templateUrl: './about.page.tpl.html'
+    templateUrl: './about.page.tpl.html',
+    styleUrls: [ './about.page.css' ]
 })
 
 export class AboutPage {

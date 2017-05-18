@@ -4,9 +4,10 @@ import { Carousel }          from '../../types/carousel/carousel';
 
 
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'carousel-component',
-    templateUrl: './carousel.component.html'
+    templateUrl: './carousel.component.html',
+    styleUrls: [ './carousel.component.css' ]
 })
 
 export class CarouselComponent {

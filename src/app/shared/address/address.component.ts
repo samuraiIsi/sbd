@@ -4,7 +4,7 @@ import { Address }          		from '../../types/address/address';
 
 declare var google: any;
 @Component({
-    moduleId: module.id,
+    moduleId: 'module.id',
     selector: 'address-component',
     templateUrl: './address.component.html'
 })
