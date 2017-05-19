@@ -23,6 +23,7 @@ body {
 #body-wrapper {
     padding-bottom: 160px;
 }
+
 .fa-circle-o-notch {
     position: absolute;
     top: 40%;
@@ -127,7 +128,9 @@ button:disabled {
     background-color: rgba(4, 74, 134, 1);
     color: #fff;
 }
-
+.margin-r--5 {
+    margin-right: 5px;
+}
 .width-100 {
     width: 100%;
 }
@@ -224,6 +227,9 @@ a:hover {
 /*----- mediaQueries -------*/
 
 @media screen and (min-width: 543px) {
+    .footer address-component:first-child i {
+        margin-right: 5px;
+    }
     .footer address-component:nth-child(2) i {
         float: right;
         margin-left: 5px;

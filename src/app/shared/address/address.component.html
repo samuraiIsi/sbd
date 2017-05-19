@@ -2,7 +2,7 @@
 	<h3>{{add.header}}</h3>
 	<p>{{add.subHeader}}</p>
 	<p><i class='fa fa-address-book'></i><span>{{add.email}}</span></p>
-	<p><i class='fa fa-phone'></i> {{add.phone}}</p>
-	<p><i class='fa fa-fax'></i> {{add.fax}}</p>
-	<p><i class='fa fa-mobile'></i> {{add.mobile}}</p>
+	<p><i class='fa fa-phone'></i><span>{{add.phone}}</span></p>
+	<p><i [class]="add.mobileClass"></i><span>{{add.mobile}}</span></p>
+	<p *ngIf="add.fax"><i class='fa fa-fax'></i><span>{{add.fax}}</span></p>
 </div>

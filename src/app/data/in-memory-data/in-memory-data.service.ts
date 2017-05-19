@@ -554,62 +554,68 @@ export class InMemoryDataService implements InMemoryDbService {
                 email: 'cmarquez@gibraltar-sbd.com',
                 phone: '+51-95-510-9774',
                 mobile: '+51-997-428-789',
+                mobileClass: 'fa fa-mobile',
                 fax: '+51-1-422-1870'
             },
             {
                 divClass: 'col-lg-3 col-lg-3 col-md-3 col-sm-4 col-xs-5 pull-r-scmin-640 text-right',
                 header: 'Gibraltar',
-                subHeader: '5.2 Waterport Place',
-                email: 'cmarquez@gibraltar-sbd.com',
-                phone: '+51-95-510-9774',
-                mobile: '+51-997-428-789',
-                fax: '+51-1-422-1870'
+                subHeader: '18/3 Rosia Steps, Gibraltar',
+                email: 'mfconsult@hotmail.com',
+                phone: '+350 5746 6000',
+                mobile: '+34 625 531 684',
+                mobileClass: 'fa fa-mobile',
+                fax: ''
             }
         ];
         let contactpageEN = [
             {
-                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img',
+                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img address-wrapper',
                 header: 'Peru',
                 subHeader: 'Las Castañitas 138, San Isidro (Lima 27) Street',
                 email: 'cmarquez@gibraltar-sbd.com',
                 phone: '+51-95-510-9774',
                 mobile: '+51-997-428-789',
+                mobileClass: 'fa fa-mobile fa-2x',
                 fax: '+51-1-422-1870',
                 mapDivClass: 'col-lg-12',
                 map: 'map'
             },
             {
-                divClass: 'col-lg-6 col-md-6',
+                divClass: 'col-lg-6 col-md-6 address-wrapper',
                 header: 'Gibraltar',
-                subHeader: '5.2 Waterport Place',
-                email: 'cmarquez@gibraltar-sbd.com',
-                phone: '+51-95-510-9774',
-                mobile: '+51-997-428-789',
-                fax: '+51-1-422-1870',
+                subHeader: '18/3 Rosia Steps, Gibraltar',
+                email: 'mfconsult@hotmail.com',
+                phone: '+350 5746 6000',
+                mobile: '+34 625 531 684',
+                mobileClass: 'fa fa-mobile fa-2x',
+                fax: '',
                 mapDivClass: 'col-lg-12',
                 map: 'map2'
             }
         ];
         let contactpageES = [
             {
-                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img',
+                divClass: 'col-lg-6 col-md-6 min-height-contact bg-border-img address-wrapper',
                 header: 'Peru',
                 subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
                 email: 'cmarquez@gibraltar-sbd.com',
                 phone: '+51-95-510-9774',
                 mobile: '+51-997-428-789',
+                mobileClass: 'fa fa-mobile fa-2x',
                 fax: '+51-1-422-1870',
                 mapDivClass: 'col-lg-12',
                 map: 'map'
             },
             {
-                divClass: 'col-lg-6 col-md-6',
+                divClass: 'col-lg-6 col-md-6 address-wrapper',
                 header: 'Gibraltar',
-                subHeader: 'Calle Las Castañitas 138, San Isidro (Lima 27)',
-                email: 'cmarquez@gibraltar-sbd.com',
-                phone: '+51-95-510-9774',
-                mobile: '+51-997-428-789',
-                fax: '+51-1-422-1870',
+                subHeader: '18/3 Rosia Steps, Gibraltar',
+                email: 'mfconsult@hotmail.com',
+                phone: '+350 5746 6000',
+                mobile: '+34 625 531 684',
+                mobileClass: 'fa fa-mobile fa-2x',
+                fax: '',
                 mapDivClass: 'col-lg-12',
                 map: 'map2'
             }

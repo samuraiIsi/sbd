@@ -1,3 +1,9 @@
 .min-height-contact {
     height: 350px;
 }
+.address-wrapper i {
+    margin-right: 5px;
+}
+.address-wrapper p:nth-child(5) span {
+	vertical-align: super;
+}
