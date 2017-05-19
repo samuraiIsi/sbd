@@ -25,8 +25,9 @@ nav a.active {
     text-shadow: none;
 }
 
-/*----- Responsive Menu -------*/
-
+.menu {
+    margin: 0 auto;
+}
 .container-btn-menu {
     display: none;
 }
@@ -79,7 +80,6 @@ nav a.active {
 
 .in {
     -webkit-animation: dropDownIn 250ms linear;
-    /* Chrome, Safari, Opera */
     animation: dropDownIn 250ms linear;
 }
 
@@ -100,9 +100,6 @@ nav a.active {
     }
 }
 
-
-/* Standard syntax */
-
 @keyframes dropDownUp {
     from {
         height: 205px;
@@ -122,9 +119,6 @@ nav a.active {
         height: 205px;
     }
 }
-
-
-/* Standard syntax */
 
 @keyframes dropDownIn {
     from {
@@ -151,4 +145,41 @@ nav a.active {
     }
 }
 
-/*----- End Responsive Menu -------*/
+.lang-section {
+    margin-top: 15px;
+}
+
+.lang-section a {
+    color: #fff;
+    background-color: #077adf;
+    font-size: 10px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.lang-section a:hover {
+    background-color: #2093f8;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-nav {
+    background-color: rgba(4, 74, 134, 1);
+    padding: 5px 10px 0px 20px;
+    margin-bottom: 30px;
+    min-height: 65px;
+}
+
+.header-nav .logo-area {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.header-nav .logo-area ul {
+    padding-left: 0;
+}
+
+.header-nav .logo-area ul li {
+    list-style: none;
+}

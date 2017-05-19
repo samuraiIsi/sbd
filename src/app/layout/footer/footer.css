@@ -1,0 +1,24 @@
+.footer {
+    background-color: #055194;
+    bottom: 0;
+    color: #fff;
+    font-size: 11px;
+    height: 140px;
+    position: absolute;
+    width: 100%;
+}
+.footer address-component i {
+    margin-right: 5px;
+}
+.footer h3 {
+    font-size: 15px !important;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer p a {
+    color: #fff;
+    text-decoration: underline;
+}

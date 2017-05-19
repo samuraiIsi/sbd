@@ -9,7 +9,8 @@ declare var google: any;
 @Component({
     moduleId: 'module.id',
     selector: 'contact-page',
-    templateUrl: './contact.page.html'
+    templateUrl: './contact.page.html',
+    styleUrls: ['./contact.page.css']
 })
 
 export class ContactPage implements OnInit {

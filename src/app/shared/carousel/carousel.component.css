@@ -1,5 +1,3 @@
-/* ---- Carousel ---*/
-
 .slider {
     width: 100%;
     margin: 0 auto;
@@ -35,14 +33,12 @@
 }
 
 .slide1 {
-    /*background: url(./../theme/assets/img/machu-pichu-xbig.jpg)no-repeat center;*/
     background-size: cover;
     animation: fade 12s infinite;
     -webkit-animation: fade 12s infinite;
 }
 
 .slide2 {
-    /*background: url(./../theme/assets/img/gib-xbig.jpg)no-repeat center;*/
     background-size: cover;
     animation: fade2 12s infinite;
     -webkit-animation: fade2 12s infinite;

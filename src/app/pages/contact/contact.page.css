@@ -1,0 +1,13 @@
+#map {
+    height: 320px;
+    /*width: 100%;*/
+}
+
+#map2 {
+    height: 320px;
+    /*width: 100%;*/
+}
+
+.sebm-google-map-container {
+    height: 300px;
+}
