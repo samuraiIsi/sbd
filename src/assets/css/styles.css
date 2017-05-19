@@ -289,12 +289,6 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .menu {
-        width: 720px !important;
-        text-align: center;
-    }
-}
 @media screen and (max-width: 628px) {
     .footer {
         font-size: 10px !important;
@@ -360,7 +354,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1060px) {
+@media screen and (min-width: 768px) and (max-width: 1110px) {
     .logo-area ul li:last-child {
         font-size: 5px;
     }
@@ -368,21 +362,20 @@ a:hover {
 
 @media screen and (min-width: 768px) and (max-width: 830px) {
     .menu a {
-        margin-right: 0;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1260px) {
-    #body-wrapper {
-        min-height: 810px;
+        margin-right: 10px;
     }
 }
 
-@media screen and (min-width: 1261px) {
-    #body-wrapper {
-        min-height: 950px;
+@media screen and (min-width: 768px) and (max-width: 890px) {
+    .menu {
+        font-size: 10px;
     }
 }
-
+@media screen and (min-width: 980px) {
+    .logo-area {
+        margin-right: 10%;
+    }
+}
 @media (max-width: 600px) {
   .module {
     font-size: 10px;
