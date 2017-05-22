@@ -8,10 +8,13 @@ import 'rxjs/add/operator/switchMap';
 
 import { BoxesPanels } from '../../types/boxesPanels/boxes-panels';
 
+import { DomSanitizer } from '@angular/platform-browser';
+
 @Component({
   moduleId: 'module.id',
   selector: 'agencies-detail',
   templateUrl: './agencies-details.component.html',
+  styleUrls: [ './agencies-details.component.css' ],
 })
 
 export class AgenciesDetailComponent implements OnInit {
@@ -19,7 +22,8 @@ export class AgenciesDetailComponent implements OnInit {
     constructor(
         private boxesPanelsService: AgenciesService,
         private route: ActivatedRoute,
-        private location: Location
+        private location: Location,
+        public sanitizer: DomSanitizer
     ) {}
     ngOnInit(): void {
         this.route.params

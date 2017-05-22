@@ -6,7 +6,8 @@ import { Accordion }          from '../../types/accordion/accordion';
 @Component({
     moduleId: 'module.id',
     selector: 'accordion-component',
-    templateUrl: './accordion.component.html'
+    templateUrl: './accordion.component.html',
+    styleUrls: [ './accordion.component.css' ]
 })
 
 export class AccordionComponent {

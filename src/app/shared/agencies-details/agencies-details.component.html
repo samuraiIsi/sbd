@@ -2,7 +2,8 @@
     <div *ngIf="agenciesInfo">
         <h2>{{agenciesInfo.title}}</h2>
         <p>{{agenciesInfo.subTitle}}</p>
-        <img [src]="agenciesInfo.image" class="img-text-pages">
+        <img [src]="agenciesInfo.image" class="img-text-pages" *ngIf="agenciesInfo.image">
+        <iframe *ngIf="agenciesInfo.frameLink" height="190" width="345" allowfullscreen="" frameborder="0" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$c2mg_DESKTOP.1.$i1nqdmsc_0.0.0" [src]='sanitizer.bypassSecurityTrustResourceUrl(agenciesInfo.frameLink)'></iframe>
         <p class="col-lg-8 fs20 padding-l--0 angular-with-newlines">{{agenciesInfo.text}}</p>
         <button (click)="goBack()" class="col-xs-1 pull-right">Back</button>
     </div>

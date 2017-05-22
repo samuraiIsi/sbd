@@ -38,7 +38,7 @@ export class ContactPage implements OnInit {
         marker1.setAnimation(google.maps.Animation.BOUNCE);
         setTimeout(function(){ marker1.setAnimation(null); }, 1500);
 
-        var myCenter2 = new google.maps.LatLng(36.14788501160045, -5.359244399999966);
+        var myCenter2 = new google.maps.LatLng(36.12177811158935, -5.35045290000006);
     	var map2 = new google.maps.Map(document.getElementById('map2'), {
 			zoom: 17,
             center: myCenter2,

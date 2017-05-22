@@ -11,3 +11,13 @@
 .sebm-google-map-container {
     height: 300px;
 }
+
+.min-height-contact {
+    height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+    .min-height-contact {
+        height: 195px;
+    }
+}

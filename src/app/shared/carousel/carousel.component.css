@@ -108,3 +108,34 @@
 .carousel-caption-m p {
     line-height: 1;
 }
+
+@media screen and (min-width: 769px) {
+    .slider,
+    .slider li img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .slider,
+    .slider li img {
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .slider,
+    .slider li img {
+        height: 125px;
+    }
+    .carousel-caption-m h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider,
+    .slider li img {
+        height: 230px;
+    }
+}

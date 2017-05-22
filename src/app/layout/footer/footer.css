@@ -7,18 +7,34 @@
     position: absolute;
     width: 100%;
 }
+
 .footer address-component i {
     margin-right: 5px;
 }
-.footer h3 {
-    font-size: 15px !important;
-}
 
-.footer p {
-    margin: 0;
+.footer address-component div h3 {
+    font-size: 15px;
 }
 
 .footer p a {
     color: #fff;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 628px) {
+    .footer {
+        font-size: 10px !important;
+    }
+}
+
+/*@media screen and (min-width: 414px) and (max-width: 545px){
+    .footer {
+        height: 170px !important;
+    }
+}*/
+
+@media screen and (max-width: 542px) {
+    .footer {
+        height: 250px !important;
+    }
 }

@@ -1,5 +1,4 @@
 /* Master Styles */
-
 html,
 body {
     margin: 0;
@@ -7,21 +6,22 @@ body {
     height: 100%;
 }
 
-.footer h3 {
-    font-size: 15px;
+a {
+    cursor: pointer;
 }
 
-.footer p {
-    margin: 0;
+a:active,
+a:hover {
+    outline: 0;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container-wrapper {
     min-height: 100%;
     position: relative;
-}
-
-#body-wrapper {
-    padding-bottom: 160px;
 }
 
 .fa-circle-o-notch {
@@ -35,90 +35,6 @@ body {
     left: 49%;
     font-size: 1.5em;
 }
-h1 {
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
-}
-a {
-    cursor: pointer;
-}
-button {
-    font-family: Arial;
-    background-color: #eee;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    cursor: hand;
-}
-button:hover {
-    background-color: #cfd8dc;
-}
-
-button:disabled {
-    background-color: #eee;
-    color: #aaa;
-    cursor: auto;
-}
-/* items class */
-
-.items {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 24em;
-}
-
-.items li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
-}
-
-.items li:hover {
-    color: #607D8B;
-    background-color: #DDD;
-    left: .1em;
-}
-
-.items li.selected {
-    background-color: #CFD8DC;
-    color: white;
-}
-
-.items li.selected:hover {
-    background-color: #BBD8DC;
-}
-
-.items .text {
-    position: relative;
-    top: -3px;
-}
-
-.items .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #607D8B;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-}
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .angular-with-newlines {
     white-space: pre-wrap;
@@ -128,9 +44,19 @@ button:disabled {
     background-color: rgba(4, 74, 134, 1);
     color: #fff;
 }
+
+.fs--15 {
+    font-size: 15px;
+}
+
+.margin--0 {
+    margin: 0;
+}
+
 .margin-r--5 {
     margin-right: 5px;
 }
+
 .width-100 {
     width: 100%;
 }
@@ -139,15 +65,30 @@ button:disabled {
     padding: 10px;
 }
 
-.accordion {
-    cursor: pointer;
-}
-
 .oblique {
     font-style: oblique;
 }
 
-/* ---- Buttons ---- */
+button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
 .btn--green {
     background-color: #009480;
     font-size: 13px;
@@ -170,18 +111,6 @@ button:disabled {
     margin-bottom: 10px;
     margin-left: 20px;
     padding: 5px 30px;
-}
-/* ---- End Buttons ---- */
-
-
-/* --------- Specific Styles ---------*/
-a:active,
-a:hover {
-    outline: 0;
-}
-
-.activeLang {
-    text-decoration: underline;
 }
 
 .hidden-m {
@@ -237,40 +166,12 @@ a:hover {
     }
 }
 @media screen and (min-width: 769px) {
-    .slider,
-    .slider li img {
-        height: 500px;
-    }
     .fs20--md {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 950px) {
-    .slider,
-    .slider li img {
-        height: 315px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .slider,
-    .slider li img {
-        height: 230px;
-    }
-    .min-height-contact {
-        height: 195px;
-    }
-}
-
 @media screen and (max-width: 414px) {
-    .slider,
-    .slider li img {
-        height: 125px;
-    }
-    .carousel-caption-m h1 {
-        font-size: 20px;
-    }
     .img-text-pages {
         width: 100% !important;
     }
@@ -289,28 +190,12 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 628px) {
-    .footer {
-        font-size: 10px !important;
-    }
-}
-@media screen and (min-width: 414px) and (max-width: 545px){
-    .footer {
-        height: 170px !important;
-    }
-}
 @media screen and (min-width: 415px) and (max-width: 767px){
     .loading {
         top: 52%;
     }
 }
 @media screen and (max-width: 542px) {
-    .footer {
-        height: 250px !important;
-    }
-    #body-wrapper {
-        padding-bottom: 250px;
-    }
     .footer div {
         width: 100%;
         float: none;
@@ -318,9 +203,6 @@ a:hover {
     }
     .footer > div:last-child {
         text-align: right;
-    }
-    .logo-area ul li:last-child {
-        font-size: 8px;
     }
 }
 
@@ -335,47 +217,14 @@ a:hover {
     .bg-border-img {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAECAYAAABGM/VAAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUE1NTU0QjM3QkQ1MTFFNDg4NzRDNkREQ0Y3NUQxMDUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUE1NTU0QjQ3QkQ1MTFFNDg4NzRDNkREQ0Y3NUQxMDUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxQTU1NTRCMTdCRDUxMUU0ODg3NEM2RERDRjc1RDEwNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxQTU1NTRCMjdCRDUxMUU0ODg3NEM2RERDRjc1RDEwNSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pj0IoLQAAAASSURBVHjaYmBABQ0MlAsABBgAVVQCAWZTCc4AAAAASUVORK5CYII=) repeat-x left bottom;
     }
-    .container-btn-menu {
-        display: inline-block !important;
-        margin-bottom: 5px;
-        margin-right: 20px;
-    }
     .fs13--xs {
         font-size: 13px;
     }
     .fs24--xs {
         font-size: 24px;
     }
-    .navbar-collapse {
-        padding-left: 0 !important;
-    }
-    nav a.active {
-        background-color: #0887f7;
-    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1110px) {
-    .logo-area ul li:last-child {
-        font-size: 5px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 830px) {
-    .menu a {
-        margin-right: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 890px) {
-    .menu {
-        font-size: 10px;
-    }
-}
-@media screen and (min-width: 980px) {
-    .logo-area {
-        margin-right: 10%;
-    }
-}
 @media (max-width: 600px) {
   .module {
     font-size: 10px;

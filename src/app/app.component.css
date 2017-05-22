@@ -1,3 +1,6 @@
+#body-wrapper {
+    padding-bottom: 160px;
+}
 nav {
     padding: 10px 0 0;
 }
@@ -23,10 +26,6 @@ nav a.active {
     font-weight: 700;
     text-decoration: underline;
     text-shadow: none;
-}
-
-.menu {
-    margin: 0 auto;
 }
 .container-btn-menu {
     display: none;
@@ -129,22 +128,6 @@ nav a.active {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .menu {
-        margin: 65px -30px 0 -30px;
-    }
-    .menu a {
-        border-radius: 0;
-        display: inline-block !important;
-        float: none;
-        margin: 0;
-        padding: 10px 20px;
-        width: 100% !important;
-        border-top: 1px solid #b5dbfd;
-        width: 100%;
-    }
-}
-
 .lang-section {
     margin-top: 15px;
 }
@@ -181,4 +164,51 @@ nav a.active {
 
 .header-nav .logo-area ul li {
     list-style: none;
+}
+
+.logo-area {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 542px) {
+    #body-wrapper {
+        padding-bottom: 250px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .menu {
+        width: 720px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    .menu {
+        margin: 65px -30px 0 -30px;
+    }
+    .menu a {
+        border-radius: 0;
+        display: inline-block !important;
+        float: none;
+        margin: 0;
+        padding: 10px 20px;
+        width: 100% !important;
+        border-top: 1px solid #b5dbfd;
+        width: 100%;
+    }
+    .header-nav .container {
+        padding-left: 0;
+    }
+    .container-btn-menu {
+        display: inline-block !important;
+        margin-bottom: 5px;
+        margin-right: 20px;
+    }
+    .navbar-collapse {
+        padding-left: 0 !important;
+    }
+    nav a.active {
+        background-color: #0887f7;
+    }
 }
