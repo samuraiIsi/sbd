@@ -61,12 +61,30 @@ a:hover {
     width: 100%;
 }
 
+.padding-lf--0 {
+    padding-left: 0;
+}
+
 .padding-all-10 {
     padding: 10px;
 }
 
+.padding-up-down--10 {
+    padding: 0 10px;
+}
+
+.list-no-style {
+    list-style: none;
+}
+
 .oblique {
     font-style: oblique;
+}
+
+.text--title {
+    text-decoration: underline;
+    font-weight: 700;
+    margin-top: 15px;
 }
 
 button {
@@ -95,6 +113,15 @@ button:disabled {
     position: relative;
     max-height: 24px;
     line-height: 12px;
+}
+
+.btn--navy-blue {
+    padding: 5px 10px;
+    background-color: #0f132e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    vertical-align: sub;
 }
 
 .btn--green:hover {

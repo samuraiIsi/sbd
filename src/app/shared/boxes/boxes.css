@@ -47,14 +47,7 @@
 /* .d-inline-block {
  	display: inline-block; //Esto es prov, hasta que se haga un repeat y espero que Ang le automaticax el float: left c= en home
 }*/
-.btn--navy-blue {
-	padding: 5px 10px;
-	background-color: #0f132e;
-	color: #fff;
-	text-decoration: none;
-	border-radius: 4px;
-	vertical-align: sub;
-}
+
 .width-500 {
 	width: 500px;
 }

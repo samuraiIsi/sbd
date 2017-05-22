@@ -1,4 +1,4 @@
-<div [class]="box.classDiv">
+<div [class]="box.classDiv" *ngIf="box.articleClass">
     <article [class]="box.articleClass">
         <div class="panel-heading text-center fH2" *ngIf="box.headerText">{{box.headerText}}</div>
         <figure>
@@ -16,7 +16,7 @@
                 <span *ngIf="box.prof">{{box.prof}}</span>
                 <h2 class="cs-post-title"><a href="">{{box.name}}</a></h2>
             </header>
-            <div [class]="box.boxTextArea"> <!-- make it flexible, adding col-lg-6 ot box-text-->
+            <div [class]="box.boxTextArea">
                 <span *ngIf="box.telephoneText">{{box.telephoneText}}</span>
                 <p *ngIf="box.telephoneText">{{box.telephone}}</p>
                 <p *ngIf="box.boxText">{{box.boxText}}</p>

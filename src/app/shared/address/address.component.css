@@ -7,3 +7,8 @@
 .address-wrapper p:nth-child(5) span {
 	vertical-align: super;
 }
+@media (max-width: 768px) {
+	.min-height-contact {
+	    height: 160px;
+	}
+}
