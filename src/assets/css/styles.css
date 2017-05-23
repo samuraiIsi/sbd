@@ -5,7 +5,9 @@ body {
     padding: 0;
     height: 100%;
 }
-
+html {
+    overflow-y: scroll;
+}
 a {
     cursor: pointer;
 }
