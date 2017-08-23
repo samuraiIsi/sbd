@@ -55,6 +55,13 @@ a:hover {
     margin: 0;
 }
 
+.margin-l--20 {
+    margin-left: 20px;
+}
+
+.margin-r--40 {
+    margin-left: 40px;
+}
 .margin-r--5 {
     margin-right: 5px;
 }
@@ -140,6 +147,11 @@ button:disabled {
     margin-bottom: 10px;
     margin-left: 20px;
     padding: 5px 30px;
+    text-decoration: none;
+}
+
+.btn--small:hover{
+    text-decoration: none;
 }
 
 .hidden-m {

@@ -218,6 +218,7 @@ nav a.active {
     margin-bottom: 10px;
     margin-left: 20px;
     padding: 5px 30px;
+    text-decoration: none;
 }
 /* ---- End Buttons ---- */
 

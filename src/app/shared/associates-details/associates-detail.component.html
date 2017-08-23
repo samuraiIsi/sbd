@@ -4,6 +4,7 @@
         <p>{{boxesPanels.subTitle}}</p>
         <img [src]="boxesPanels.image" [class]="boxesPanels.imageClass">
         <p class="fs20--md fs13--xs col-lg-8 padding-l--0 fs20 angular-with-newlines">{{boxesPanels.text}}</p>
-        <button (click)="goBack()" class="btn--small pull-right">Back</button>
+        <button (click)="goBack()" class="btn--small pull-right margin-l--20">Back</button>
+        <a [href]="boxesPanels.btnLinkA" *ngIf="boxesPanels.btnLinkA" class="btn--small pull-right btn-primary" target="_blank">View WebSite</a>
     </div>
 </div>
