@@ -98,12 +98,16 @@ a:hover {
 
 button {
     font-family: Arial;
-    background-color: #eee;
+    background-color: #e6e6e6;
     border: none;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
     cursor: hand;
+}
+
+button:focus {
+    outline: none;
 }
 
 button:hover {
